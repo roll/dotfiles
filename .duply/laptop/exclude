@@ -6,6 +6,7 @@
 # - **
 # for more details see duplicity manpage, section File Selection
 # http://duplicity.nongnu.org/duplicity.1.html#sect9
+
 - /home/roll/.local/share/Trash
 - /home/roll/.cache
 - /home/roll/.vagrant.d/boxes
