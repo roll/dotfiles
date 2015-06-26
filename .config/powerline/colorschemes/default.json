@@ -1,0 +1,14 @@
+{
+	"name": "Default",
+	"groups": {
+		"branch":                    { "fg": "white", "bg": "darkcyan", "attr": [] },
+		"branch_dirty":              { "fg": "brightyellow", "bg": "darkcyan", "attr": [] },
+		"branch_clean":              { "fg": "white", "bg": "darkcyan", "attr": [] },
+		"branch:divider":            { "fg": "gray7", "bg": "darkcyan", "attr": [] },
+		"cwd":                       { "fg": "gray9", "bg": "gray3", "attr": [] },
+		"cwd:current_folder":        { "fg": "gray10", "bg": "gray3", "attr": ["bold"] },
+		"cwd:divider":               { "fg": "gray7", "bg": "gray3", "attr": [] },
+		"virtualenv":                { "fg": "white", "bg": "darkcyan", "attr": [] }
+	}
+}
+

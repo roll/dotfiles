@@ -1,0 +1,14 @@
+#
+# General
+#
+
+[core]
+	editor = vim
+[user]
+	name = roll\n
+	email = roll@respect31.com
+[color]
+	ui = true
+[push]
+	default = simple
+

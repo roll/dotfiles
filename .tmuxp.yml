@@ -1,0 +1,8 @@
+session_name: dotfiles
+windows:
+  - window_name: bash
+    panes:
+      -
+  - window_name: vim
+    panes:
+      - vim
