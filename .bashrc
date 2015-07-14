@@ -233,9 +233,6 @@ alias xclip='xclip -selection c'
 # Misc
 #
 
-# Amazon
-export S3_USE_SIGV4="True"
-
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
