@@ -21,4 +21,4 @@
 #
 # m h  dom mon dow   command
 
-0 8 * * 1 . $HOME/.credentials; /usr/bin/duply laptop backup 2>&1 > $HOME/backup.log
+0 8 * * 1 . $HOME/.credentials; duply laptop backup 2>&1 > $HOME/backup.log
