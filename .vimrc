@@ -233,7 +233,7 @@ endif
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
-let g:NERDTreeIgnore=['^npm-debug.log$', '^tags$', '.git[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', 'node_modules[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]']
+let g:NERDTreeIgnore=['^npm-debug.log$', '^tags$', 'pyc$', '.git[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', 'node_modules[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " let g:nerdtree_tabs_open_on_console_startup=1
 " let g:nerdtree_tabs_focus_on_files=1
@@ -283,6 +283,13 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 
 " Trailing whitespaces
 autocmd BufWritePre * :FixWhitespace
+
+" Python
+" let g:pymode_warnings = 0
+" let g:pymode_quickfix_minheight = 0
+" let g:pymode_quickfix_maxheight = 0
+" let g:pymode_doc = 0
+let g:pymode_rope = 0
 
 "
 " Custom functions
