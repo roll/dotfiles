@@ -132,6 +132,7 @@ autocmd FileType html setl ts=2 sts=2 sw=2 nowrap
 autocmd FileType htmldjango setl ts=2 sts=2 sw=2 nowrap
 autocmd FileType scss setl ts=2 sts=2 sw=2 foldmethod=marker foldmarker={,}
 autocmd FileType coffee setl ts=2 sts=2 sw=2
+autocmd BufRead,BufNewFile dockerfile setfiletype dockerfile
 
 "
 " Bindings

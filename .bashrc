@@ -171,6 +171,9 @@ fi
 # Chrome
 alias chrome='google-chrome %U'
 
+# Docker
+alias compose='docker-compose'
+
 # Git
 alias branch='git branch'
 alias tag='git tag'
