@@ -112,13 +112,13 @@ fi
 #
 
 # Binaries path
-if [ -d "$HOME/binaries" ] ; then
-    export PATH="$HOME/projects/binaries:$PATH"
+if [ -d "$HOME/.binaries" ] ; then
+    export PATH="$HOME/.binaries:$PATH"
 fi
 
 # Private binaries path
-if [ -d "$HOME/binaries/private" ] ; then
-    export PATH="$HOME/projects/binaries/private:$PATH"
+if [ -d "$HOME/.binaries/private" ] ; then
+    export PATH="$HOME/.binaries/private:$PATH"
 fi
 
 # Chdir pathes
