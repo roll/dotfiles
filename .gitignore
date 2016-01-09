@@ -1,4 +1,4 @@
-private/
 .ropeproject/
+.tmuxp.yml
 *.iml
 

@@ -4,7 +4,7 @@ shopt -s dotglob
 
 # Set variable
 DIRECTORY="projects/dotfiles"
-GLOBIGNORE="$HOME/$DIRECTORY/[!.]*:*.git/*:*.gitignore:*.tmuxp.yml"
+GLOBIGNORE="$HOME/$DIRECTORY/[!.]*:*.git/*:*.tmuxp.yml"
 
 #Make symlinks
 for f in ~/$DIRECTORY/**

@@ -4,9 +4,10 @@
 
 [core]
 	editor = vim
+	excludesfile = /home/roll/.gitignore
 [user]
 	name = roll\n
-	email = roll@respect31.com
+	email = roll@post.agency
 [color]
 	ui = true
 [push]

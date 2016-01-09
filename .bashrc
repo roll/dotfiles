@@ -250,3 +250,12 @@ POWERLINE_BASH_CONTINUATION=1
 
 # Travis
 source /home/roll/.travis/travis.sh
+
+export NVM_DIR="/home/roll/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/roll/.google-cloud/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/roll/.google-cloud/google-cloud-sdk/completion.bash.inc'
