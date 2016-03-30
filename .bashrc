@@ -209,12 +209,10 @@ alias c='clear'
 alias p='ipython'
 alias j='nesh'
 alias t='tmuxup'
+alias v='source .venv'
+alias e='set -a; source .env'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
-
-# Nose
-# alias test='nosetests'
-# alias cover='test --with-coverage --cover-erase --cover-package=`dirname=${PWD##*/}; echo ${dirname//./}`'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
