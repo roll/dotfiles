@@ -2,4 +2,5 @@ drafts
 .python/
 .ropeproject/
 .tmuxp.yml
+.venv
 *.iml
