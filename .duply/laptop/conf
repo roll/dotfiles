@@ -8,7 +8,7 @@
 #        as they are used to separate the entries
 #  GPG_PW='passphrase' - symmetric encryption using passphrase only
 #GPG_KEY='_KEY_ID_'
-GPG_PW="$DUPLY_GPG_PASS"
+GPG_PW="$GPG_PASS"
 # gpg encryption settings in detail (extended settings)
 #  the above settings translate to the following more specific settings
 #  GPG_KEYS_ENC='<keyid1>[,<keyid2>,...]' - list of pubkeys to encrypt to
@@ -78,11 +78,11 @@ GPG_PW="$DUPLY_GPG_PASS"
 #            http://en.wikipedia.org/wiki/Url_encoding
 #            if you define the credentials as TARGET_USER, TARGET_PASS below
 #            duply will try to url_encode them for you if the need arises
-TARGET='s3://s3-eu-central-1.amazonaws.com/roll-backup/laptop'
+TARGET='s3://s3-eu-central-1.amazonaws.com/roll-backups/laptop'
 # optionally the username/password can be defined as extra variables
 # setting them here _and_ in TARGET results in an error
-TARGET_USER="$DUPLY_AWS_ID"
-TARGET_PASS="$DUPLY_AWS_PASS"
+TARGET_USER="$AWS_ACCESS_KEY_ID"
+TARGET_PASS="$AWS_SECRET_ACCESS_KEY"
 
 # base directory to backup
 SOURCE='/home/roll'
