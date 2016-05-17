@@ -255,6 +255,7 @@ let g:tagbar_type_scss={
 \  ]
 \}
 
+
 " Gundo
 let g:gundo_right=0
 let g:gundo_width=30
@@ -266,6 +267,7 @@ let gitgutter_eager=0
 let NERDSpaceDelims=1
 
 " DelimitMate
+" let delimitMate_autoclose=0
 let delimitMate_expand_cr=2
 let delimitMate_expand_space=1
 let delimitMate_expand_inside_quotes=1

@@ -173,24 +173,18 @@ alias chrome='google-chrome %U'
 
 # Docker
 alias compose='docker-compose'
+alias cloud='docker-cloud'
 
 # Git
-alias branch='git branch'
-alias tag='git tag'
-alias checkout='git checkout'
-alias merge='export tmp_branch=`branch` && checkout master && merge $tmp_branch && push; checkout $tmp_branch; unset tmp_branch'
+alias git='hub'
 alias status='git status'
 alias dif='git diff'
 alias log='git log --pretty=format:"%C(yellow)%h%Creset %s%Cgreen%d" --reverse -20'
 alias rollback='git checkout .'
-alias stage='git add .'
 alias unstage='git reset'
 alias clean='git clean -f -d'
-alias merge='git merge'
 alias commit='git add . && git commit -a'
 alias amend='git add . && git commit --amend'
-alias revert='git revert'
-alias rebase='git rebase -i HEAD~10'
 alias pull='git pull origin'
 alias push='git push --follow-tags origin'
 
