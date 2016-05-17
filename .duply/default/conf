@@ -78,7 +78,7 @@ GPG_PW="$GPG_PASS"
 #            http://en.wikipedia.org/wiki/Url_encoding
 #            if you define the credentials as TARGET_USER, TARGET_PASS below
 #            duply will try to url_encode them for you if the need arises
-TARGET='s3://s3-eu-central-1.amazonaws.com/roll-backups/laptop'
+TARGET='s3://s3-eu-central-1.amazonaws.com/roll-backups'
 # optionally the username/password can be defined as extra variables
 # setting them here _and_ in TARGET results in an error
 TARGET_USER="$AWS_ACCESS_KEY_ID"
