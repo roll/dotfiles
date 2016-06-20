@@ -131,7 +131,7 @@ export CDPATH="$HOME/projects:$CDPATH"
 # Set custom bindings
 setxkbmap -option 'shift:both_capslock'
 setxkbmap -option 'caps:ctrl_modifier'
-setxkbmap -option 'compose:ralt'
+# setxkbmap -option 'compose:ralt'
 xcape -e 'Caps_Lock=Escape'
 
 #
@@ -188,6 +188,7 @@ alias amend='git add . && git commit --amend'
 alias pull='git pull origin'
 alias push='git push --follow-tags origin'
 alias fetch='git fetch -p'
+alias master='git checkout master'
 
 # Idea
 alias idea='$HOME/.idea/vendor/bin/idea.sh'
