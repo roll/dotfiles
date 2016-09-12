@@ -1,5 +1,6 @@
 drafts/
 .python/
+.python2/
 .ropeproject/
 .editorconfig
 .tmuxp.yml
