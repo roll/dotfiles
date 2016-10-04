@@ -254,3 +254,6 @@ source '/home/roll/.google-cloud/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/home/roll/.google-cloud/google-cloud-sdk/completion.bash.inc'
+
+# added by Anaconda3 4.2.0 installer
+export PATH="/home/roll/.anaconda3/bin:$PATH"
