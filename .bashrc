@@ -111,14 +111,9 @@ fi
 # Pathes
 #
 
-# Binaries path
-if [ -d "$HOME/.binaries" ] ; then
-    export PATH="$HOME/.binaries:$PATH"
-fi
-
-# Private binaries path
-if [ -d "$HOME/.binaries/private" ] ; then
-    export PATH="$HOME/.binaries/private:$PATH"
+# Bin path
+if [ -d "$HOME/.bin" ] ; then
+    export PATH="$HOME/.bin:$PATH"
 fi
 
 # Chdir pathes
