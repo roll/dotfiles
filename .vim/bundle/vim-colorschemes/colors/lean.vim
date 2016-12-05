@@ -151,3 +151,9 @@ hi CoffeeObjAssign ctermfg=106
 hi coffeeExtendedOp ctermfg=246
 hi coffeeSpecialOp ctermfg=246
 hi coffeeDotAccess ctermfg=246
+
+" JavaScript
+hi javaScriptIdentifier ctermfg=106
+hi xmlTag ctermfg=106
+hi xmlTagName ctermfg=106
+hi xmlEndTag ctermfg=106
