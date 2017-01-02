@@ -128,6 +128,7 @@ setxkbmap -option 'shift:both_capslock'
 setxkbmap -option 'caps:ctrl_modifier'
 # setxkbmap -option 'compose:ralt'
 xcape -e 'Caps_Lock=Escape'
+xmodmap ~/.Xmodmap
 
 #
 # Locales
