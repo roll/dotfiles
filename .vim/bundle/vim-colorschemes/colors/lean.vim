@@ -157,3 +157,4 @@ hi javaScriptIdentifier ctermfg=106
 hi xmlTag ctermfg=106
 hi xmlTagName ctermfg=106
 hi xmlEndTag ctermfg=106
+hi javaScriptFunction ctermfg=106

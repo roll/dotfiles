@@ -135,6 +135,7 @@ autocmd FileType htmldjango setl ts=2 sts=2 sw=2 nowrap
 autocmd FileType scss setl ts=2 sts=2 sw=2 foldmethod=marker foldmarker={,}
 autocmd FileType coffee setl ts=2 sts=2 sw=2
 autocmd BufRead,BufNewFile dockerfile setfiletype dockerfile
+autocmd BufRead,BufNewFile .eslintrc setfiletype yaml
 
 "
 " Bindings
@@ -236,7 +237,7 @@ endif
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
-let g:NERDTreeIgnore=['^xunit.xml$', '^.coverage$', '^npm-debug.log$', '^tags$', 'pyc$', '.git$[[dir]]', '.cache[[dir]]', '^dist$[[dir]]', '.python[[dir]]', '.egg-info[[dir]]', '.tox[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', 'coverage[[dir]]', 'node_modules[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]']
+let g:NERDTreeIgnore=['^xunit.xml$', '^.coverage$', '^npm-debug.log$', '^tags$', 'pyc$', '.git$[[dir]]', '.cache[[dir]]', '.egg-info[[dir]]', '.tox[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', 'coverage[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " let g:nerdtree_tabs_open_on_console_startup=1
 " let g:nerdtree_tabs_focus_on_files=1
