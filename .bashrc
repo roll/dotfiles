@@ -124,11 +124,15 @@ export CDPATH="$HOME/projects:$CDPATH"
 #
 
 # Set custom bindings
-setxkbmap -option 'shift:both_capslock'
-setxkbmap -option 'caps:ctrl_modifier'
+# xmodmap ~/.Xmodmap
+# setxkbmap -option 'shift:both_capslock'
 # setxkbmap -option 'compose:ralt'
 xcape -e 'Caps_Lock=Escape'
-xmodmap ~/.Xmodmap
+setxkbmap -option 'caps:ctrl_modifier'
+xmodmap -e "keycode  37 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock Caps_Lock"
+xmodmap -e "keycode  67 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
+xmodmap -e "keycode  68 = Delete NoSymbol Delete NoSymbol Delete"
+xmodmap -e "keycode  108 = Return NoSymbol Return"
 
 #
 # Locales
@@ -206,6 +210,7 @@ alias v='source .venv'
 alias e='set -a; source .env'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
+alias npm='npm -s'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
