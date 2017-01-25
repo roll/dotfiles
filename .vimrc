@@ -58,6 +58,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
 " Plugin 'mtscout6/vim-tagbar-css'
 
 " Stop adding plugins
