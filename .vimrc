@@ -59,6 +59,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'elmcast/elm-vim'
 " Plugin 'mtscout6/vim-tagbar-css'
 
 " Stop adding plugins
