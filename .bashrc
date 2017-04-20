@@ -125,11 +125,12 @@ export CDPATH="$HOME/projects:$CDPATH"
 
 # Set custom bindings
 # xmodmap ~/.Xmodmap
+# setxkbmap -option 'shift:both_capslock'
 # setxkbmap -option 'compose:ralt'
 xcape -e 'Caps_Lock=Escape'
 setxkbmap -option 'caps:ctrl_modifier'
-setxkbmap -option 'shift:both_capslock'
 xmodmap -e "keycode  108 = Return NoSymbol Return"
+xmodmap -e "keycode  37 = Caps_Lock NoSymbol Caps_Lock NoSymbol Caps_Lock Caps_Lock"
 xmodmap -e "keycode  67 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
 xmodmap -e "keycode  68 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
 xmodmap -e "keycode  69 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
