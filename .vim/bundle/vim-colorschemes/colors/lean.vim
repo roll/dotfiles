@@ -90,6 +90,10 @@ hi vimVar ctermfg=253
 " YAML
 hi yamlKeyValueDelimiter ctermfg=246 ctermbg=236
 hi yamlBlockMappingKey ctermfg=106
+hi yamlFlowMappingKey ctermfg=253
+hi yamlFlowIndicator ctermbg=236
+hi yamlConstant ctermfg=253
+hi yamlInteger ctermfg=253
 
 " Python
 hi pythonBuiltinType ctermfg=253

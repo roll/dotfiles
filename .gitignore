@@ -7,4 +7,5 @@ tmp/
 .editorconfig
 .tmuxp.yml
 .venv
+composer.phar
 *.iml

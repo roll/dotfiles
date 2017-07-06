@@ -213,6 +213,9 @@ alias e='set -a; source .env'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
 alias npm='npm -s'
+alias eslint='NODE_ENV=testing node_modules/.bin/eslint'
+alias mocha='NODE_ENV=testing node_modules/.bin/mocha'
+alias karma='NODE_ENV=testing node_modules/.bin/karma start'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
@@ -257,3 +260,9 @@ source '/home/roll/.google-cloud/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/home/roll/.google-cloud/google-cloud-sdk/completion.bash.inc'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# PHPBrew
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
