@@ -21,7 +21,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'sjl/gundo.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -57,6 +57,7 @@ Plugin 'lukaszkorecki/CoffeeTags'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
 " Plugin 'mtscout6/vim-tagbar-css'
@@ -298,6 +299,9 @@ let g:pymode = 0
 " let g:pymode_quickfix_maxheight = 0
 " let g:pymode_doc = 0
 let g:pymode_rope = 0
+
+" React
+let g:jsx_ext_required = 0
 
 "
 " Custom functions

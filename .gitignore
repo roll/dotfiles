@@ -9,3 +9,5 @@ tmp/
 .venv
 composer.phar
 *.iml
+run.yml
+goodread.yml

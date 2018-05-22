@@ -173,6 +173,9 @@ fi
 # Chrome
 alias chrome='google-chrome %U'
 
+# Composer
+alias composer='php composer'
+
 # Docker
 alias compose='docker-compose'
 alias cloud='docker-cloud'
@@ -213,9 +216,12 @@ alias e='set -a; source .env'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
 alias npm='npm -s'
-alias eslint='NODE_ENV=testing node_modules/.bin/eslint'
-alias mocha='NODE_ENV=testing node_modules/.bin/mocha'
-alias karma='NODE_ENV=testing node_modules/.bin/karma start'
+alias eslint='NODE_ENV=testing npx eslint'
+alias mocha='NODE_ENV=testing npx mocha'
+alias karma='NODE_ENV=testing npx karma start'
+alias webpack='npx webpack'
+alias flow='npx flow'
+alias nyc='npx nyc'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
@@ -266,3 +272,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # PHPBrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+[[ -s "/home/roll/.gvm/scripts/gvm" ]] && source "/home/roll/.gvm/scripts/gvm"
+
+[ -s "/home/roll/.jabba/jabba.sh" ] && source "/home/roll/.jabba/jabba.sh"
