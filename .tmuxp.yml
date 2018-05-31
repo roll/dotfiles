@@ -6,3 +6,6 @@ windows:
   - window_name: vim
     panes:
       - vim
+  - window_name: process
+    panes:
+      -

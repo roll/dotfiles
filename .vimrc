@@ -21,7 +21,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'sjl/gundo.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
@@ -53,13 +53,13 @@ Plugin 'tpope/vim-repeat'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'klen/python-mode'
-Plugin 'lukaszkorecki/CoffeeTags'
-Plugin 'kchmck/vim-coffee-script'
+" Plugin 'lukaszkorecki/CoffeeTags'
+" Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
-Plugin 'digitaltoad/vim-jade'
+" Plugin 'digitaltoad/vim-jade'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
-Plugin 'posva/vim-vue'
+" Plugin 'posva/vim-vue'
 " Plugin 'mtscout6/vim-tagbar-css'
 
 " Stop adding plugins
@@ -135,7 +135,7 @@ autocmd FileType ruby setl ts=2 sts=2 sw=2
 autocmd FileType html setl ts=2 sts=2 sw=2 nowrap
 autocmd FileType htmldjango setl ts=2 sts=2 sw=2 nowrap
 autocmd FileType scss setl ts=2 sts=2 sw=2 foldmethod=marker foldmarker={,}
-autocmd FileType coffee setl ts=2 sts=2 sw=2
+" autocmd FileType coffee setl ts=2 sts=2 sw=2
 autocmd BufRead,BufNewFile dockerfile setfiletype dockerfile
 autocmd BufRead,BufNewFile .eslintrc setfiletype yaml
 
@@ -220,9 +220,9 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<CR>
 "
 
 " Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 set laststatus=2
 set tabline=%!tabber#TabLine()
 let g:tabber_filename_style = 'filename'
@@ -263,6 +263,9 @@ let g:tagbar_type_scss={
 " Gundo
 let g:gundo_right=0
 let g:gundo_width=30
+if has('python3')
+  let g:gundo_prefer_python3 = 1
+endif
 
 " Gitgutter
 let gitgutter_eager=0
