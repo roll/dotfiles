@@ -40,6 +40,9 @@ export HISTSIZE=1000000
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
+# Write history immediately
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 #
 # Chroot
 #
