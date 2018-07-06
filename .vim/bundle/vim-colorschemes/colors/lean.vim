@@ -162,3 +162,5 @@ hi xmlTag ctermfg=106
 hi xmlTagName ctermfg=106
 hi xmlEndTag ctermfg=106
 hi javaScriptFunction ctermfg=106
+hi javaScriptBrowserObjects ctermfg=253
+hi javaScriptEventListenerKeywords ctermfg=253
