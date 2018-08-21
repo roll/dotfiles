@@ -138,6 +138,10 @@ xmodmap -e "keycode  67 = BackSpace BackSpace BackSpace BackSpace BackSpace Back
 xmodmap -e "keycode  68 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
 xmodmap -e "keycode  69 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
 xmodmap -e "keycode  70 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace"
+xmodmap -e "keycode  71 = Return Return Return Return Return Return"
+xmodmap -e "keycode  72 = Return Return Return Return Return Return"
+xmodmap -e "keycode  73 = Return Return Return Return Return Return"
+xmodmap -e "keycode  74 = Return Return Return Return Return Return"
 
 #
 # Locales
