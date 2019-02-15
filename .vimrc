@@ -52,6 +52,7 @@ Plugin 'tpope/vim-repeat'
 " Languages
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'klen/python-mode'
 " Plugin 'lukaszkorecki/CoffeeTags'
 " Plugin 'kchmck/vim-coffee-script'
@@ -218,6 +219,9 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<CR>
 "
 " Plugin settings
 "
+
+" Markdown
+let vim_markdown_preview_github=1
 
 " Powerline
 python3 from powerline.vim import setup as powerline_setup

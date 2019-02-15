@@ -164,3 +164,6 @@ hi xmlEndTag ctermfg=106
 hi javaScriptFunction ctermfg=106
 hi javaScriptBrowserObjects ctermfg=253
 hi javaScriptEventListenerKeywords ctermfg=253
+hi javaScriptWebAPI ctermfg=253
+hi javaScriptHtmlElemProperties ctermfg=253
+hi javaScriptDOMObjects ctermfg=253
