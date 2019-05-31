@@ -174,10 +174,10 @@ set hidden
 " au BufAdd,BufNewFile * nested tab sball
 map <Leader>I :b#<CR>
 map <Leader>O :CtrlPBuffer<CR>
-map <Leader>H :bfirst<CR>
+" map <Leader>H :bfirst<CR>
 map <Leader>J :bprevious<CR>
 map <Leader>K :bnext<CR>
-map <Leader>L :blast<CR>
+" map <Leader>L :blast<CR>
 
 " Tabs
 map <Leader>` :tabnew<CR>
@@ -197,10 +197,10 @@ let g:lasttab=1
 au TabLeave * let g:lasttab=tabpagenr()
 map <silent> <Leader>i :exe "tabn ".g:lasttab<CR>
 " map <silent> <Leader>o :CtrlPBuffer<CR>
-map <silent> <Leader>h :tabfirst<CR>
+" map <silent> <Leader>h :tabfirst<CR>
 map <silent> <Leader>j :tabprevious<CR>
 map <silent> <Leader>k :tabnext<CR>
-map <silent> <Leader>l :tablast<CR>
+" map <silent> <Leader>l :tablast<CR>
 
 " Panes
 map <Leader>( <C-w><
@@ -216,12 +216,17 @@ nnoremap <silent> <C-j> :TmuxNavigateDown<CR>
 nnoremap <silent> <C-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <C-l> :TmuxNavigateRight<CR>
 
+" Spelling
+map <Leader>l :set spelllang=en<CR> :set spell<CR>
+map <Leader>L :set spelllang=en<CR> :set nospell<CR>
+
 "
 " Plugin settings
 "
 
 " Markdown
 let vim_markdown_preview_github=1
+let vim_markdown_preview_hotkey='<C-m>'
 
 " Powerline
 python3 from powerline.vim import setup as powerline_setup
