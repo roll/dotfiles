@@ -253,8 +253,8 @@ alias xclip='xclip -selection c'
 # Trackpoint
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 1
-xinput --set-prop 'pointer:ThinkPad Compact Bluetooth Keyboard with TrackPoint' 'libinput Accel Profile Enabled' 0, 1
-xinput --set-prop 'pointer:ThinkPad Compact Bluetooth Keyboard with TrackPoint' 'libinput Accel Speed' 1
+# xinput --set-prop 'pointer:ThinkPad Compact Bluetooth Keyboard with TrackPoint' 'libinput Accel Profile Enabled' 0, 1
+# xinput --set-prop 'pointer:ThinkPad Compact Bluetooth Keyboard with TrackPoint' 'libinput Accel Speed' 1
 
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
