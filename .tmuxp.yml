@@ -1,4 +1,4 @@
-session_name: dotfiles
+session_name: home
 windows:
   - window_name: bash
     panes:
