@@ -2,6 +2,8 @@
 shopt -s globstar
 shopt -s dotglob
 
+# TODO: fix not creating directories
+
 # Set variable
 DIRECTORY="projects/dotfiles"
 GLOBIGNORE="$HOME/$DIRECTORY/[!.]*:$HOME/$DIRECTORY/.git/*:$HOME/$DIRECTORY/.tmuxp.yml"
