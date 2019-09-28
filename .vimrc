@@ -248,7 +248,7 @@ endif
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
-let g:NERDTreeIgnore=['^xunit.xml$', '^.coverage$', '^selenium-debug.log$', '^npm-debug.log$', '^tags$', 'pyc$', '.git$[[dir]]', '.cache[[dir]]', '.coverage[[dir]]', '.egg-info[[dir]]', '.tox[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]', '.nyc_output[[dir]]']
+let g:NERDTreeIgnore=['^xunit.xml$', '^.coverage$', '^selenium-debug.log$', '^npm-debug.log$', 'pyc$', '.git$[[dir]]', '.cache[[dir]]', '.coverage[[dir]]', '.egg-info[[dir]]', '.tox[[dir]]', '.ropeproject[[dir]]', '.publish[[dir]]', '_site[[dir]]', '.sass-cache[[dir]]', '.vagrant[[dir]]', '__pycache__[[dir]]', 'venv[[dir]]', '.nyc_output[[dir]]']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " let g:nerdtree_tabs_open_on_console_startup=1
 " let g:nerdtree_tabs_focus_on_files=1
