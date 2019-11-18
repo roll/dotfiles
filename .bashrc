@@ -273,6 +273,8 @@ POWERLINE_BASH_CONTINUATION=1
 
 export NVM_DIR="/home/roll/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install 12
+nvm use 12
 
 # The next line enables kubectl/helm bash completion
 source <(kubectl completion bash)
