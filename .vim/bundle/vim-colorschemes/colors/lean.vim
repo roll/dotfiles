@@ -169,3 +169,6 @@ hi javaScriptWebAPI ctermfg=253
 hi javaScriptHtmlElemProperties ctermfg=253
 hi javaScriptDOMObjects ctermfg=253
 hi javaScriptDOMMethods ctermfg=253
+hi javaScriptGlobalObjects ctermfg=253
+hi javaScriptExceptions ctermfg=253
+hi javaScriptAjaxMethods ctermfg=253
