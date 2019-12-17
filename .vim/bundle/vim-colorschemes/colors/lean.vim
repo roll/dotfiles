@@ -104,6 +104,7 @@ hi pythonStrFormat ctermfg=246 ctermbg=237
 hi pythonSelf ctermfg=253
 hi pythonRepeat ctermfg=106
 hi pythonFunction ctermfg=253
+hi pythonEscape ctermfg=246
 
 " HTML
 hi javaScript ctermfg=253 ctermbg=237
