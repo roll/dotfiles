@@ -64,6 +64,7 @@ Plugin 'mxw/vim-jsx'
 " Plugin 'mtscout6/vim-tagbar-css'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 " Stop adding plugins
 call vundle#end()
