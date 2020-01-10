@@ -1,3 +1,0 @@
-#!/bin/bash
-
-TEMPFILE=`tempfile` && pandoc $@ > $TEMPFILE && google-chrome %U --user-data-dir=/home/roll/.chrome/general $TEMPFILE

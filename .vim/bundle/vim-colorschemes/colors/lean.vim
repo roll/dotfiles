@@ -173,3 +173,13 @@ hi javaScriptDOMMethods ctermfg=253
 hi javaScriptGlobalObjects ctermfg=253
 hi javaScriptExceptions ctermfg=253
 hi javaScriptAjaxMethods ctermfg=253
+hi javaScriptDocTags ctermfg=240
+
+" TypeScript
+hi typescriptIdentifier ctermfg=106
+hi typescriptStorageClass ctermfg=106
+hi typescriptType ctermfg=111
+hi typescriptGlobalObjects ctermfg=253
+hi typescriptExceptions ctermfg=253
+" hi typescriptReserved ctermfg=253
+" hi typescriptLineComment ctermfg=246

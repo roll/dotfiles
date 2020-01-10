@@ -63,6 +63,7 @@ Plugin 'mxw/vim-jsx'
 " Plugin 'posva/vim-vue'
 " Plugin 'mtscout6/vim-tagbar-css'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'leafgarland/typescript-vim'
 
 " Stop adding plugins
 call vundle#end()
@@ -312,6 +313,10 @@ let g:pymode = 0
 " let g:pymode_quickfix_maxheight = 0
 " let g:pymode_doc = 0
 let g:pymode_rope = 0
+
+" Typescript
+" let g:typescript_ignore_browserwords = 1
+au BufReadPost,BufNewFile *.ts syntax keyword typescriptGlobalObjects Node Comment Entity type
 
 " React
 let g:jsx_ext_required = 0

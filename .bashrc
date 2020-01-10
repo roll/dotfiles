@@ -231,6 +231,8 @@ alias jest='NODE_ENV=testing npx jest'
 alias webpack='npx webpack'
 alias flow='npx flow'
 alias nyc='npx nyc'
+alias tsc='npx tsc'
+alias tsr='npx ts-node'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
@@ -265,6 +267,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Node
 export PATH="$PATH:$HOME/.node/bin"
+
+# NVim
+export PATH="$PATH:$HOME/projects/neovim"
 
 # Powerline
 powerline-daemon -q
