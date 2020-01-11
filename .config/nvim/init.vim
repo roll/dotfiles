@@ -158,6 +158,8 @@ autocmd BufWritePre * :FixWhitespace
 "
 
 " Cocnvim
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions = [
 \ 'coc-tsserver',
 \ 'coc-emmet',
@@ -208,7 +210,7 @@ let NERDSpaceDelims=1
 let g:user_emmet_leader_key = '<C-e>'
 
 " Airline
-let g:airline_theme='tomorrow'
+let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 1
 let g:airline_symbols = {}
 let g:airline_left_sep = '»'
