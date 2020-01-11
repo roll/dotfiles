@@ -107,6 +107,12 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" Buffers
+set hidden
+map <Leader>I :b#<CR>
+map <Leader>J :bprevious<CR>
+map <Leader>K :bnext<CR>
+
 " Tabs
 map <Leader>` :tabnew<CR>
 noremap <Leader>1 1gt
@@ -202,11 +208,9 @@ let NERDSpaceDelims=1
 let g:user_emmet_leader_key = '<C-e>'
 
 " Airline
-let g:airline_theme='base16'
+let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+let g:airline_symbols = {}
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
