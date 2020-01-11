@@ -3,9 +3,9 @@ windows:
   - window_name: bash
     panes:
       -
-  - window_name: vim
+  - window_name: nvim
     panes:
-      - vim
+      - nvim
   - window_name: process
     panes:
       -

@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 #
 # General
 #
@@ -214,10 +210,10 @@ alias ipython='ipython3 --no-confirm-exit'
 alias ltunify='$HOME/.ltunify/vendor/ltunify'
 
 # Misc
+alias o='nvim'
 alias h='cd $HOME'
 alias c='clear'
 alias p='ipython'
-alias j='nesh'
 alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'

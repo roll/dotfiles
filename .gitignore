@@ -1,3 +1,7 @@
+#
+# General
+#
+
 tmp/
 .tmp/
 .python/
