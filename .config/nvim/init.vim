@@ -59,7 +59,7 @@ set mouse=a
 
 " Colortheme
 set background=dark
-colorscheme roll
+colorscheme lean
 syntax enable
 
 " Invisibles

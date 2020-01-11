@@ -17,7 +17,8 @@ shopt -s checkwinsize
 set -o vi
 
 # Editor
-export EDITOR=/usr/bin/vim.basic
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 # Glob
 shopt -s globstar
@@ -220,7 +221,6 @@ alias j='nesh'
 alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'
-alias vim='nvim'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
 # alias npm='npm -s'
