@@ -6,6 +6,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " IDE
+Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'fweep/vim-tabber'
 Plug 'preservim/nerdtree'
