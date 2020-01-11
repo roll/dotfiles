@@ -84,8 +84,15 @@ hi DiffAdd guifg=NONE guibg=#13354A guisp=#13354A gui=NONE ctermfg=NONE ctermbg=
 hi TabLine guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi colorcolumn guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
+" HTML
+hi javaScript ctermfg=253 ctermbg=237
+
 " Vim
 hi vimVar ctermfg=253
+hi vimMapModKey ctermfg=111
+hi vimFuncSID ctermfg=111
+hi vimNotation ctermfg=111
+hi vimContinue ctermfg=240
 
 " YAML
 hi yamlKeyValueDelimiter ctermfg=246 ctermbg=237
@@ -105,9 +112,6 @@ hi pythonSelf ctermfg=253
 hi pythonRepeat ctermfg=106
 hi pythonFunction ctermfg=253
 hi pythonEscape ctermfg=246
-
-" HTML
-hi javaScript ctermfg=253 ctermbg=237
 
 " CSS
 hi cssBoxProp ctermfg=253
@@ -143,8 +147,6 @@ hi sassIdChar ctermfg=106
 hi sassClassChar ctermfg=106
 hi sassMixin ctermfg=106
 hi sassMixinName ctermfg=106
-" hi sassExtend ctermfg=106
-" hi sassMixing ctermfg=106
 
 " CoffeeScript
 hi CoffeeParen ctermfg=253
@@ -181,5 +183,3 @@ hi typescriptStorageClass ctermfg=106
 hi typescriptType ctermfg=111
 hi typescriptGlobalObjects ctermfg=253
 hi typescriptExceptions ctermfg=253
-" hi typescriptReserved ctermfg=253
-" hi typescriptLineComment ctermfg=246
