@@ -57,11 +57,6 @@ set timeoutlen=3000
 set ttimeoutlen=0
 set mouse=a
 
-" Backups
-set backupdir=~/.config/.nvim/backup//
-set directory=~/.config/.nvim/swap//
-set undodir=~/.config/.nvim/undo//
-
 " Colortheme
 set background=dark
 colorscheme roll
@@ -200,7 +195,7 @@ let g:user_emmet_leader_key = '<C-e>'
 
 " Airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='papercolor'
 
 " Markdown
 let vim_markdown_preview_github=1
