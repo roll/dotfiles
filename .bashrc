@@ -210,6 +210,7 @@ alias ipython='ipython3 --no-confirm-exit'
 alias ltunify='$HOME/.ltunify/vendor/ltunify'
 
 # Misc
+alias f='fzf'
 alias o='nvim'
 alias h='cd $HOME'
 alias c='clear'
@@ -219,8 +220,8 @@ alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias snapshot='tar -cvzp $HOME | gpg -co machine-$(date +%F).tar.gz.gpg'
-# alias npm='npm -s'
+
+# Node
 alias cdk='npx cdk'
 alias eslint='npx eslint'
 alias mocha='NODE_ENV=testing npx mocha'
@@ -293,7 +294,14 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # PHPBrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
+# Gvm
 [[ -s "/home/roll/.gvm/scripts/gvm" ]] && source "/home/roll/.gvm/scripts/gvm"
 
+# Jabba
 [ -s "/home/roll/.jabba/jabba.sh" ] && source "/home/roll/.jabba/jabba.sh"
+
+# Nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -2,25 +2,36 @@
 " General
 "
 
-" Plug
+" Install
 call plug#begin('~/.config/nvim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'kshenoy/vim-signature'
+
+" IDE
+Plug 'SirVer/ultisnips'
 Plug 'fweep/vim-tabber'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'liuchengxu/vista.vim'
+Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
 Plug 'flazz/vim-colorschemes'
-Plug 'liuchengxu/vista.vim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'terryma/vim-expand-region'
-Plug 'nelstrom/vim-visual-star-search'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Editor
+Plug 'terryma/vim-multiple-cursors'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'terryma/vim-expand-region'
+Plug 'scrooloose/nerdcommenter'
+
+" Languages
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
+
 call plug#end()
 
 " Leader
@@ -90,7 +101,7 @@ map j gj
 map k gk
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
-nnoremap <Leader>r :so $MYVIMRC<CR>
+nnoremap <Leader>r :e!<CR>
 nnoremap <Leader>a ggVG
 nnoremap <Leader>s `[v`]
 nnoremap <Leader>e o<ESC>k
@@ -100,6 +111,8 @@ nnoremap <Leader>d :call <SID>SynStack()<CR>
 nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
+nnoremap <Leader>F :Files<Space>
+nnoremap <Leader>f :Ag<Space>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -150,9 +163,6 @@ let g:tmux_navigator_no_mappings=1
 map <Leader>l :set spelllang=en<CR> :set spell<CR>
 map <Leader>L :set spelllang=en<CR> :set nospell<CR>
 
-" Whitespaces
-autocmd BufWritePre * :FixWhitespace
-
 "
 " Plugins
 "
@@ -169,7 +179,8 @@ let g:coc_global_extensions = [
 \ 'coc-yank',
 \ 'coc-prettier',
 \ 'coc-eslint',
-\ 'coc-python'
+\ 'coc-python',
+\ 'coc-snippets'
 \]
 
 " Nerdtree
@@ -206,8 +217,19 @@ let gitgutter_eager=0
 " Nerdcommenter
 let NERDSpaceDelims=1
 
+" Vista
+let g:vista_default_executive = 'coc'
+let g:vista#renderer#enable_icon = 1
+let g:vista#renderer#icons = {
+\ "function": "\uf794",
+\ "variable": "\uf71b",
+\}
+
 " Emmet
 let g:user_emmet_leader_key = '<C-e>'
+
+" Tabber
+let g:tabber_filename_style = 'filename'
 
 " Airline
 let g:airline_theme='papercolor'
@@ -236,6 +258,9 @@ let g:airline_symbols.linenr = ''
 " Markdown
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
+
+" Whitespaces
+autocmd BufWritePre * :FixWhitespace
 
 " Highlights
 function! <SID>SynStack()
