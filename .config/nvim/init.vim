@@ -108,12 +108,12 @@ nnoremap <Leader>s `[v`]
 nnoremap <Leader>e o<ESC>k
 nnoremap <Leader>E O<ESC>j
 nnoremap <Leader>w :set list!<CR>
-nnoremap <Leader>d :call <SID>SynStack()<CR>
+nnoremap <Leader>D :call <SID>SynStack()<CR>
 nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
-nnoremap <Leader>F :Files<Space>
-nnoremap <Leader>f :Ag<Space>
+nnoremap <Leader>f :TmuxNavigateRight<CR>:Files<CR>
+nnoremap <Leader>F :TmuxNavigateRight<CR>:Ag<Space>
 vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
@@ -168,26 +168,11 @@ map <Leader>L :set spelllang=en<CR> :set nospell<CR>
 " Plugins
 "
 
-" Cocnvim
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-let g:coc_global_extensions = [
-\ 'coc-tsserver',
-\ 'coc-emmet',
-\ 'coc-css',
-\ 'coc-html',
-\ 'coc-json',
-\ 'coc-yank',
-\ 'coc-prettier',
-\ 'coc-eslint',
-\ 'coc-python',
-\ 'coc-snippets'
-\]
-
 " Nerdtree
 autocmd bufenter * if
 \ (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary")
 \ | q | endif
+autocmd BufWinEnter *.* NERDTreeFind
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
@@ -211,6 +196,37 @@ let g:NERDTreeIgnore=[
 \ 'venv[[dir]]',
 \ '.nyc_output[[dir]]'
 \ ]
+
+" Cocnvim
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+\ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+nnoremap <silent> <Leader>d :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+let g:coc_global_extensions = [
+\ 'coc-tsserver',
+\ 'coc-emmet',
+\ 'coc-css',
+\ 'coc-html',
+\ 'coc-json',
+\ 'coc-yank',
+\ 'coc-prettier',
+\ 'coc-eslint',
+\ 'coc-python',
+\ 'coc-snippets'
+\]
+
+" Ultisnip
+" let g:UltiSnipsExpandTrigger="<C-t>"
+" let g:UltiSnipsJumpForwardTrigger="<C-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " Gitgutter
 let gitgutter_eager=0
