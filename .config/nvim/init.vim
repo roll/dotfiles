@@ -89,13 +89,13 @@ filetype indent on
 
 " Filetypes
 filetype on
-autocmd FileType typescript setl ts=2 sts=2 sw=2
+autocmd FileType markdown wrap
 autocmd FileType yaml setl ts=2 sts=2 sw=2
+autocmd FileType json setl ts=2 sts=2 sw=2
 autocmd FileType ruby setl ts=2 sts=2 sw=2
-autocmd FileType html setl ts=2 sts=2 sw=2 nowrap
-autocmd FileType scss setl ts=2 sts=2 sw=2 foldmethod=marker foldmarker={,}
-autocmd BufRead,BufNewFile dockerfile setfiletype dockerfile
-autocmd BufRead,BufNewFile .eslintrc setfiletype yaml
+autocmd FileType html setl ts=2 sts=2 sw=2
+autocmd FileType javascript setl ts=2 sts=2 sw=2
+autocmd FileType typescript setl ts=2 sts=2 sw=2
 
 " Actions
 map j gj
@@ -198,6 +198,12 @@ let g:NERDTreeIgnore=[
 \ ]
 
 " Cocnvim
+nmap <silent> gp <Plug>(coc-diagnostic-prev)
+nmap <silent> gn <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :

@@ -1,3 +1,4 @@
 {
-    "python.jediEnabled": false
+  "eslint.run": "onSave",
+  "python.jediEnabled": false
 }

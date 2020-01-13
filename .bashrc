@@ -224,6 +224,8 @@ alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 # Node
 alias cdk='npx cdk'
 alias eslint='npx eslint'
+alias standard='npx standard'
+alias standardx='npx standardx'
 alias mocha='NODE_ENV=testing npx mocha'
 alias karma='NODE_ENV=testing npx karma start'
 alias jest='NODE_ENV=testing npx jest'
