@@ -1,4 +1,6 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["typescript"],
+  "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
   "eslint.run": "onSave",
   "python.jediEnabled": false
 }

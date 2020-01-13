@@ -27,6 +27,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'terryma/vim-expand-region'
 Plug 'scrooloose/nerdcommenter'
+Plug 'Raimondi/delimitMate'
 
 " Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -230,9 +231,8 @@ let g:coc_global_extensions = [
 \]
 
 " Ultisnip
-" let g:UltiSnipsExpandTrigger="<C-t>"
-" let g:UltiSnipsJumpForwardTrigger="<C-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/snipped'
+let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/snipped']
 
 " Gitgutter
 let gitgutter_eager=0
