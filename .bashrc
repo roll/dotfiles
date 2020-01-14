@@ -219,6 +219,7 @@ alias n='node'
 alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'
+alias d='npm run debug --'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Node
