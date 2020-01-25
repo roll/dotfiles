@@ -220,7 +220,6 @@ alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'
 alias d='npm run debug --'
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Node
 alias cdk='npx cdk'
@@ -232,6 +231,7 @@ alias karma='NODE_ENV=testing npx karma start'
 alias jest='NODE_ENV=testing npx jest'
 alias webpack='npx webpack'
 alias flow='npx flow'
+alias ndb='npx ndb'
 alias nyc='npx nyc'
 alias tsc='npx tsc'
 alias tsr='npx ts-node'
@@ -251,6 +251,9 @@ alias tmuxup='tmuxp load -y2 . || tmux attach'
 
 # Xclip
 alias xclip='xclip -selection c'
+
+# Network
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 #
 # Misc

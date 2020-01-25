@@ -97,6 +97,7 @@ autocmd FileType ruby setl ts=2 sts=2 sw=2
 autocmd FileType html setl ts=2 sts=2 sw=2
 autocmd FileType javascript setl ts=2 sts=2 sw=2
 autocmd FileType typescript setl ts=2 sts=2 sw=2
+autocmd FileType typescript.tsx setl ts=2 sts=2 sw=2
 
 " Actions
 map j gj
@@ -173,7 +174,7 @@ map <Leader>L :set spelllang=en<CR> :set nospell<CR>
 autocmd bufenter * if
 \ (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary")
 \ | q | endif
-autocmd BufWinEnter *.* NERDTreeFind
+autocmd BufWinEnter *.* NERDTreeFind | TmuxNavigateRight
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
@@ -242,6 +243,7 @@ let NERDSpaceDelims=1
 
 " Vista
 let g:vista_default_executive = 'coc'
+let g:vista_ignore_kinds = ['Variable']
 let g:vista#renderer#enable_icon = 1
 let g:vista#renderer#icons = {
 \ "function": "\uf794",

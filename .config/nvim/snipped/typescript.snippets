@@ -1,3 +1,21 @@
 snippet cl "console.log(text)"
 console.log(${0:text})
 endsnippet
+
+snippet mixin "Datist mixin"
+import { IMainSystem } from '../system'
+
+// Define
+
+const mixins: Partial<IMainSystem> = {}
+
+// Implement
+
+mixins.databaseCreate = function(this: IMainSystem, url) {
+  return new Database(this, url)
+}
+
+// Export
+
+export default mixins
+endsnippet
