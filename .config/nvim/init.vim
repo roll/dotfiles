@@ -8,6 +8,7 @@ call plug#begin('~/.config/nvim/plugged')
 " IDE
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
+Plug 'mattn/emmet-vim'
 Plug 'fweep/vim-tabber'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -90,7 +91,7 @@ filetype indent on
 
 " Filetypes
 filetype on
-autocmd FileType markdown wrap
+autocmd FileType markdown setl wrap
 autocmd FileType yaml setl ts=2 sts=2 sw=2
 autocmd FileType json setl ts=2 sts=2 sw=2
 autocmd FileType ruby setl ts=2 sts=2 sw=2
@@ -100,6 +101,7 @@ autocmd FileType typescript setl ts=2 sts=2 sw=2
 autocmd FileType typescript.tsx setl ts=2 sts=2 sw=2
 
 " Actions
+map , `
 map j gj
 map k gk
 vmap v <Plug>(expand_region_expand)
@@ -107,9 +109,11 @@ vmap <C-v> <Plug>(expand_region_shrink)
 nnoremap <Leader>r :e!<CR>
 nnoremap <Leader>a ggVG
 nnoremap <Leader>s `[v`]
+nnoremap <Leader>S :set list!<CR>
 nnoremap <Leader>e o<ESC>k
 nnoremap <Leader>E O<ESC>j
-nnoremap <Leader>w :set list!<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
 nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
@@ -208,8 +212,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
-\ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
+" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+" \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 nnoremap <silent> <Leader>d :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -234,6 +239,7 @@ let g:coc_global_extensions = [
 " Ultisnip
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/snipped'
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/snipped']
+let g:UltiSnipsExpandTrigger="<C-s>"
 
 " Gitgutter
 let gitgutter_eager=0
