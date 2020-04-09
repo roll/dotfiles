@@ -232,7 +232,7 @@ alias jest='NODE_ENV=testing npx jest'
 alias webpack='npx webpack'
 alias flow='npx flow'
 alias ndb='npx ndb'
-alias nyc='npx nyc'
+alias ncu='npx ncu'
 alias tsc='npx tsc'
 alias tsr='npx ts-node'
 
