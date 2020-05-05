@@ -1,7 +1,10 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "python"],
   "tsserver.enableJavascript": false,
   "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
   "eslint.run": "onSave",
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--skip-string-normalization", "--line-length", "90"],
+  "python.linting.pylamaEnabled": true
 }
