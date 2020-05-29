@@ -204,7 +204,7 @@ alias mpf='master && pull && fetch'
 alias idea='$HOME/.idea/vendor/bin/idea.sh'
 
 # Ipython
-alias ipython='ipython3 --no-confirm-exit'
+alias ipython='ipython --no-confirm-exit'
 
 # Ltunify
 alias ltunify='$HOME/.ltunify/vendor/ltunify'
