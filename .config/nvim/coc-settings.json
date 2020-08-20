@@ -5,6 +5,5 @@
   "eslint.run": "onSave",
   "python.jediEnabled": false,
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--skip-string-normalization", "--line-length", "90"],
   "python.linting.pylamaEnabled": true
 }
