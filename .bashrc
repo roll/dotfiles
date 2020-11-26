@@ -312,3 +312,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_COMMAND='ag -g ""'
+
+source /home/roll/.bash_completions/frictionless.sh
