@@ -99,6 +99,7 @@ autocmd FileType html setl ts=2 sts=2 sw=2
 autocmd FileType javascript setl ts=2 sts=2 sw=2
 autocmd FileType typescript setl ts=2 sts=2 sw=2
 autocmd FileType typescript.tsx setl ts=2 sts=2 sw=2
+autocmd FileType typescript :call matchadd('typescriptGlobalObjects', '\<type\>')
 
 " Actions
 map , `
