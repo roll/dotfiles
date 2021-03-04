@@ -270,6 +270,9 @@ xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 1
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Python
+export PATH="$PATH:$HOME/.local/bin"
+
 # Node
 export PATH="$PATH:$HOME/.node/bin"
 
