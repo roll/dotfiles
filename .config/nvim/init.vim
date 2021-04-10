@@ -240,6 +240,8 @@ let g:coc_global_extensions = [
 \ 'coc-python',
 \ 'coc-snippets'
 \]
+" https://github.com/neoclide/coc.nvim/issues/531
+nmap <Esc> :call coc#float#close_all() <CR>
 
 " Ultisnip
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/snipped'

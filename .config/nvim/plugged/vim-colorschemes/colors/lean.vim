@@ -184,3 +184,4 @@ hi typescriptType ctermfg=111
 hi typescriptGlobalObjects ctermfg=253
 hi typescriptExceptions ctermfg=253
 hi typescriptBraces ctermfg=253
+hi xmlError ctermfg=253
