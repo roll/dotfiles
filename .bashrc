@@ -111,10 +111,9 @@ fi
 # Pathes
 #
 
-# Bin path
-if [ -d "$HOME/.bin" ] ; then
-    export PATH="$HOME/.bin:$PATH"
-fi
+# Binaries path
+# export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/projects/binaries:$PATH"
 
 # Chdir pathes
 export CDPATH="$HOME/projects:$CDPATH"
@@ -288,10 +287,11 @@ POWERLINE_BASH_CONTINUATION=1
 # Travis
 # source /home/roll/.travis/travis.sh
 
-export NVM_DIR="/home/roll/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm install 14
-nvm use 14
+# export NVM_DIR="/home/roll/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# nvm use system
+# nvm install 14
+# nvm use 14
 
 # The next line enables kubectl/helm bash completion
 source <(kubectl completion bash)
