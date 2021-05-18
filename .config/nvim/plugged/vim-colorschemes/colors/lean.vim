@@ -176,6 +176,7 @@ hi javaScriptGlobalObjects ctermfg=253
 hi javaScriptExceptions ctermfg=253
 hi javaScriptAjaxMethods ctermfg=253
 hi javaScriptDocTags ctermfg=240
+hi javaScriptEmbed ctermfg=253
 
 " TypeScript
 hi typescriptIdentifier ctermfg=106
