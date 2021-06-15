@@ -287,12 +287,6 @@ POWERLINE_BASH_CONTINUATION=1
 # Travis
 # source /home/roll/.travis/travis.sh
 
-# export NVM_DIR="/home/roll/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# nvm use system
-# nvm install 14
-# nvm use 14
-
 # The next line enables kubectl/helm bash completion
 source <(kubectl completion bash)
 source <(helm completion bash)
@@ -309,11 +303,14 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Jabba
 [ -s "/home/roll/.jabba/jabba.sh" ] && source "/home/roll/.jabba/jabba.sh"
 
-# Nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
+# Frictionless
 source /home/roll/.bash_completions/frictionless.sh
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
