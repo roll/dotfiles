@@ -147,6 +147,7 @@ hi cssIdentifier ctermfg=106
 hi cssClassName ctermfg=106
 hi cssPseudoClass ctermfg=106
 hi cssVendor ctermfg=111
+hi cssImportant ctermfg=111 ctermbg=237
 
 " SASS
 hi sassVariable ctermfg=253
