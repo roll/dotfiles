@@ -139,6 +139,14 @@ hi cssAttrComma ctermfg=253
 hi cssSelectorOp ctermfg=253
 hi cssSelectorOp2 ctermfg=253
 hi cssColorProp ctermfg=253
+hi cssFlexibleBoxAttr ctermfg=253
+hi cssMediaProp ctermfg=253
+hi cssMediaType ctermfg=253
+hi cssCascadeAttr ctermfg=253
+hi cssIdentifier ctermfg=106
+hi cssClassName ctermfg=106
+hi cssPseudoClass ctermfg=106
+hi cssVendor ctermfg=111
 
 " SASS
 hi sassVariable ctermfg=253
