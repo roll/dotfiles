@@ -104,6 +104,10 @@ autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type :')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type=')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type =')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type)')
+aug python
+  au!
+  au BufWrite *.py call CocAction('format')
+aug END
 
 " Actions
 map , `
@@ -235,9 +239,9 @@ let g:coc_global_extensions = [
 \ 'coc-html',
 \ 'coc-json',
 \ 'coc-yank',
-\ 'coc-prettier',
 \ 'coc-eslint',
-\ 'coc-python',
+\ 'coc-pyright',
+\ 'coc-prettier',
 \ 'coc-snippets'
 \]
 " https://github.com/neoclide/coc.nvim/issues/531
@@ -257,6 +261,7 @@ let NERDSpaceDelims=1
 " Vista
 let g:vista_default_executive = 'coc'
 let g:vista_ignore_kinds = ['Variable']
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 let g:vista#renderer#enable_icon = 1
 let g:vista#renderer#icons = {
 \ "function": "\uf794",
