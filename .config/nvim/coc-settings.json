@@ -6,6 +6,5 @@
   "eslint.run": "onSave",
   "pyright.enable": true,
   "python.formatting.provider": "black",
-  "python.linting.pylamaEnabled": true,
-  "diagnostic.level": "information"
+  "python.linting.pylamaEnabled": true
 }
