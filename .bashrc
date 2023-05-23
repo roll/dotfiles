@@ -112,8 +112,7 @@ fi
 #
 
 # Binaries path
-# export PATH="$HOME/.bin:$PATH"
-export PATH="$HOME/projects/binaries:$PATH"
+export PATH="$HOME/binaries:$PATH"
 
 # Chdir pathes
 export CDPATH="$HOME/projects:$CDPATH"
@@ -318,3 +317,4 @@ nvm use system --silent
 
 # Livemark
 source /home/roll/.bash_completions/livemark.sh
+
