@@ -106,6 +106,7 @@ autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type =')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type)')
 aug python
   au!
+  au BufWrite *.py call CocAction('runCommand', 'python.sortImports')
   au BufWrite *.py call CocAction('format')
 aug END
 

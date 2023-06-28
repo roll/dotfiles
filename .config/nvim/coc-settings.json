@@ -6,5 +6,8 @@
   "eslint.run": "onSave",
   "pyright.enable": true,
   "python.formatting.provider": "black",
-  "python.linting.pylamaEnabled": true
+  "pyright.organizeimports.provider": "isort",
+  "python.linting.ruffEnabled": true,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.functionReturnTypes": false
 }
