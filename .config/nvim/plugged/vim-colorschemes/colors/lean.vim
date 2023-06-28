@@ -103,6 +103,10 @@ hi yamlFlowIndicator ctermbg=237
 hi yamlConstant ctermfg=253
 hi yamlInteger ctermfg=253
 
+" TOML
+hi tomlKey ctermfg=106
+hi tomlKeyDq ctermfg=106
+
 " Python
 hi pythonBuiltinType ctermfg=253
 hi pythonDecorator ctermfg=246
