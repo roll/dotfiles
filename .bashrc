@@ -116,6 +116,10 @@ export PATH="$HOME/binaries:$PATH"
 
 # Chdir pathes
 export CDPATH="$HOME/projects:$CDPATH"
+# export CDPATH="$HOME/projects/mycarro:$CDPATH"
+# export CDPATH="$HOME/projects/okfn:$CDPATH"
+# export CDPATH="$HOME/projects/frictionlessdata:$CDPATH"
+# export CDPATH="$HOME/projects/others:$CDPATH"
 
 #
 # Bindings

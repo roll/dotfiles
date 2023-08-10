@@ -9,5 +9,6 @@
   "pyright.organizeimports.provider": "isort",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
-  "pyright.inlayHints.functionReturnTypes": false
+  "pyright.inlayHints.functionReturnTypes": false,
+  "snippets.ultisnips.pythonPrompt": false
 }
