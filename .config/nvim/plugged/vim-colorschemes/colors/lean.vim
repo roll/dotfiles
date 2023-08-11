@@ -202,3 +202,5 @@ hi typescriptBraces ctermfg=253
 hi typescriptHtmlEvents ctermfg=253
 hi typescriptMessage ctermfg=253
 hi xmlError ctermfg=253
+hi typescriptDecorators ctermbg=NONE
+hi typescriptGlobalNodeObjects ctermbg=NONE
