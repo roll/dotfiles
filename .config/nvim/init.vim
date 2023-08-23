@@ -29,11 +29,13 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'terryma/vim-expand-region'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Raimondi/delimitMate'
+Plug 'sbdchd/neoformat'
 
 " Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
+Plug 'prisma/vim-prisma'
 
 call plug#end()
 
@@ -88,6 +90,9 @@ set autoindent
 set smartindent
 set ts=4 sts=4 sw=4 et
 filetype indent on
+
+" Formatters
+let g:neoformat_enabled_typescript = ['rome']
 
 " Filetypes
 filetype on
@@ -197,6 +202,7 @@ let g:NERDTreeIgnore=[
 \ '^.coverage$',
 \ '^selenium-debug.log$',
 \ '^npm-debug.log$',
+\ '^rome-socket',
 \ 'pyc$',
 \ '.git$[[dir]]',
 \ '.cache[[dir]]',
@@ -210,7 +216,8 @@ let g:NERDTreeIgnore=[
 \ '.vagrant[[dir]]',
 \ '__pycache__[[dir]]',
 \ 'venv[[dir]]',
-\ '.nyc_output[[dir]]'
+\ '.nyc_output[[dir]]',
+\ 'rome-logs[[dir]]',
 \ ]
 
 " Cocnvim

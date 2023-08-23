@@ -1,14 +1,16 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact"],
-  "coc.preferences.willSaveHandlerTimeout": 5000,
-  "tsserver.enableJavascript": false,
-  "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
-  "eslint.run": "onSave",
+  "coc.preferences.formatOnSave": true,
+  "snippets.ultisnips.directories": [
+    "~/.config/nvim/snipped"
+  ],
+  "snippets.ultisnips.pythonPrompt": false,
   "pyright.enable": true,
   "python.formatting.provider": "black",
   "pyright.organizeimports.provider": "isort",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
-  "snippets.ultisnips.pythonPrompt": false
+  "typescript.format.enable": false,
+  "prettier.enable": false,
+  "eslint.format.enable": false
 }
