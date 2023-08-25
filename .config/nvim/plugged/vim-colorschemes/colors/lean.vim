@@ -204,3 +204,7 @@ hi typescriptMessage ctermfg=253
 hi xmlError ctermfg=253
 hi typescriptDecorators ctermbg=NONE
 hi typescriptGlobalNodeObjects ctermbg=NONE
+
+" Prisma
+hi prismaModel ctermfg=111
+" hi prismaType ctermfg=111
