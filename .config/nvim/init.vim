@@ -21,6 +21,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'github/copilot.vim'
 
 " Editor
 Plug 'terryma/vim-multiple-cursors'
