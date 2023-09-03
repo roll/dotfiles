@@ -224,20 +224,19 @@ alias e='set -a; source .env'
 alias d='npm run debug --'
 
 # Node
-alias cdk='npx cdk'
+alias prettier='npx prettier'
 alias eslint='npx eslint'
-alias standard='npx standard'
-alias standardx='npx standardx'
-alias jest='NODE_ENV=testing npx jest'
-alias mocha='NODE_ENV=testing npx mocha'
-alias karma='NODE_ENV=testing npx karma start'
-alias rome='npx rome'
+alias biome='npx biome'
+alias jest='npx jest'
 alias ndb='npx ndb'
 alias tsc='npx tsc'
 alias ncu='npx ncu'
-alias vb='npx vite'
-alias vt='npx vitest'
-alias vr='npx vite-node'
+alias cdk='npx cdk'
+
+# JavaScript
+alias jb='npx vite'
+alias jt='npx vitest'
+alias jr='npx vite-node'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
