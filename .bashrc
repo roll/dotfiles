@@ -225,7 +225,9 @@ alias d='npm run debug --'
 
 # Node
 alias prettier='npx prettier'
+alias wrangler='npx wrangler'
 alias eslint='npx eslint'
+alias prisma='npx prisma'
 alias biome='npx biome'
 alias jest='npx jest'
 alias ndb='npx ndb'
