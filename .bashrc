@@ -222,6 +222,7 @@ alias t='tmuxup'
 alias v='source .venv'
 alias e='set -a; source .env'
 alias d='npm run debug --'
+alias a='npx astro'
 
 # Node
 alias prettier='npx prettier'
@@ -279,9 +280,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Node
 export PATH="$PATH:$HOME/.node/bin"
-
-# NVim
-export PATH="$PATH:$HOME/projects/neovim"
 
 # Powerline
 powerline-daemon -q

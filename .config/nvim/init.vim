@@ -37,6 +37,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
 Plug 'prisma/vim-prisma'
+Plug 'wuelnerdotexe/vim-astro'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
