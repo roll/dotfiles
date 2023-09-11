@@ -224,10 +224,10 @@ alias v='source .venv'
 alias e='set -a; source .env'
 alias d='npm run debug --'
 alias a='npx astro'
+alias w='npx wrangler'
 
 # Node
 alias prettier='npx prettier'
-alias wrangler='npx wrangler'
 alias eslint='npx eslint'
 alias prisma='npx prisma'
 alias biome='npx biome'
