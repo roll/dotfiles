@@ -1,16 +1,10 @@
 {
   "coc.preferences.formatOnSave": true,
-  "snippets.ultisnips.directories": [
-    "~/.config/nvim/snipped"
-  ],
-  "snippets.ultisnips.pythonPrompt": false,
+  "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
   "pyright.enable": true,
   "python.formatting.provider": "black",
   "pyright.organizeimports.provider": "isort",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
-  "pyright.inlayHints.functionReturnTypes": false,
-  "typescript.format.enable": false,
-  "prettier.enable": false,
-  "eslint.format.enable": false
+  "pyright.inlayHints.functionReturnTypes": false
 }

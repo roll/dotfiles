@@ -30,7 +30,6 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'terryma/vim-expand-region'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Raimondi/delimitMate'
-Plug 'sbdchd/neoformat'
 
 " Languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
