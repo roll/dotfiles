@@ -95,6 +95,9 @@ hi vimFuncSID ctermfg=111
 hi vimNotation ctermfg=111
 hi vimContinue ctermfg=240
 
+" JSON
+hi jsonQuote ctermfg=246 ctermbg=237
+
 " YAML
 hi yamlKeyValueDelimiter ctermfg=246 ctermbg=237
 hi yamlBlockMappingKey ctermfg=106
