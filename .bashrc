@@ -241,6 +241,7 @@ alias cdk='npx cdk'
 alias jb='npx vite'
 alias jt='npx vitest'
 alias jr='npx vite-node'
+alias je='npx electron-vite'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
