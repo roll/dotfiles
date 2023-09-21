@@ -199,6 +199,7 @@ autocmd BufWinEnter *.* NERDTreeFind | TmuxNavigateRight
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
+" \ '.cache[[dir]]',
 let g:NERDTreeIgnore=[
 \ '^xunit.xml$',
 \ '^.coverage$',
@@ -207,7 +208,6 @@ let g:NERDTreeIgnore=[
 \ '^rome-socket',
 \ 'pyc$',
 \ '.git$[[dir]]',
-\ '.cache[[dir]]',
 \ '.coverage[[dir]]',
 \ '.egg-info[[dir]]',
 \ '.tox[[dir]]',
