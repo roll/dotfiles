@@ -199,6 +199,7 @@ autocmd BufWinEnter *.* NERDTreeFind | TmuxNavigateRight
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeWinSize=30
+" \ 'venv[[dir]]',
 let g:NERDTreeIgnore=[
 \ '^xunit.xml$',
 \ '^.coverage$',
@@ -217,7 +218,6 @@ let g:NERDTreeIgnore=[
 \ '.sass-cache[[dir]]',
 \ '.vagrant[[dir]]',
 \ '__pycache__[[dir]]',
-\ 'venv[[dir]]',
 \ '.nyc_output[[dir]]',
 \ 'rome-logs[[dir]]',
 \ ]
