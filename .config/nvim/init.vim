@@ -22,7 +22,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'github/copilot.vim'
-" Plug 'Exafunction/codeium.vim'
+Plug 'stevearc/aerial.nvim'
+Plug 'simrat39/symbols-outline.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 " Editor
 Plug 'terryma/vim-multiple-cursors'
@@ -133,7 +135,7 @@ nnoremap <Leader>E O<ESC>j
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
-nnoremap <Leader>m :Vista!!<CR>
+nnoremap <Leader>m :SymbolsOutline<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
 nnoremap <Leader>f :TmuxNavigateRight<CR>:Files<CR>
@@ -323,3 +325,6 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" Enable init.lua
+lua require('init')
