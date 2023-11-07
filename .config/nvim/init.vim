@@ -135,7 +135,7 @@ nnoremap <Leader>E O<ESC>j
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
-nnoremap <Leader>m :SymbolsOutline<CR>
+nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
 nnoremap <Leader>f :TmuxNavigateRight<CR>:Files<CR>
@@ -327,4 +327,4 @@ function! <SID>SynStack()
 endfunc
 
 " Enable init.lua
-lua require('init')
+" lua require('init')
