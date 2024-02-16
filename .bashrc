@@ -237,6 +237,7 @@ alias tsc='npx tsc'
 alias ncu='npx ncu'
 alias cdk='npx cdk'
 alias pm2='npx pm2'
+alias esb='npx esbuild'
 
 # JavaScript
 alias jb='npx vite'
