@@ -240,10 +240,10 @@ alias pm2='npx pm2'
 alias esb='npx esbuild'
 
 # JavaScript
-alias jb='npx vite'
-alias jt='npx vitest'
-alias jr='npx vite-node'
-alias je='npx electron-vite'
+alias jsb='npx vite'
+alias jst='npx vitest'
+alias jsr='npx vite-node'
+alias jse='npx electron-vite'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
