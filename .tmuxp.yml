@@ -9,6 +9,3 @@ windows:
   - window_name: proc
     panes:
       -
-  - window_name: serv
-    panes:
-      -
