@@ -11,6 +11,7 @@ tmp/
 .editorconfig
 .tmuxp.yml
 .venv
+.user
 composer.phar
 *.iml
 run.yml
