@@ -101,11 +101,13 @@ let g:neoformat_enabled_typescript = ['rome']
 
 " Filetypes
 filetype on
-autocmd FileType markdown setl wrap
+autocmd FileType sql setl ts=2 sts=2 sw=2
+autocmd FileType yaml setl ts=2 sts=2 sw=2
 autocmd FileType yaml setl ts=2 sts=2 sw=2
 autocmd FileType json setl ts=2 sts=2 sw=2
 autocmd FileType ruby setl ts=2 sts=2 sw=2
 autocmd FileType html setl ts=2 sts=2 sw=2
+autocmd FileType markdown setl wrap
 autocmd FileType javascript setl ts=2 sts=2 sw=2
 autocmd FileType typescript setl ts=2 sts=2 sw=2
 autocmd FileType typescript.tsx setl ts=2 sts=2 sw=2
