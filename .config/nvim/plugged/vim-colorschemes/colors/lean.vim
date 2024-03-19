@@ -85,6 +85,10 @@ hi DiffAdd guifg=NONE guibg=#13354A guisp=#13354A gui=NONE ctermfg=NONE ctermbg=
 hi TabLine guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi colorcolumn guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
+" SQL
+hi sqlKeyword ctermfg=106 ctermbg=237
+hi sqlSpecial ctermfg=106 ctermbg=237
+
 " HTML
 hi javaScript ctermfg=253 ctermbg=237
 
