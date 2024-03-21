@@ -241,8 +241,7 @@ alias cdk='npx cdk'
 alias pm2='npx pm2'
 
 # JavaScript
-alias jsp='yarn'
-alias jsw='yarn workspace'
+alias jsp='pnpm'
 alias jsb='npx vite'
 alias jst='npx vitest'
 alias jsr='npx vite-node'
