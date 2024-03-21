@@ -242,6 +242,7 @@ alias pm2='npx pm2'
 
 # JavaScript
 alias jsp='yarn'
+alias jsw='yarn workspace'
 alias jsb='npx vite'
 alias jst='npx vitest'
 alias jsr='npx vite-node'
