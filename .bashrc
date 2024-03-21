@@ -224,6 +224,8 @@ alias v='source .venv'
 alias e='set -a; source .env'
 
 # Node
+alias electron-vite='npx electron-vite'
+alias vite-node='npx vite-node'
 alias esbuild='npx esbuild'
 alias wrangler='npx wrangler'
 alias prettier='npx prettier'
@@ -240,12 +242,9 @@ alias ncu='npx ncu'
 alias cdk='npx cdk'
 alias pm2='npx pm2'
 
-# JavaScript
-alias jsp='pnpm'
-alias jsb='npx vite'
-alias jst='npx vitest'
-alias jsr='npx vite-node'
-alias jse='npx electron-vite'
+# Node (shorcuts)
+alias vinode='npx vite-node'
+alias vitron='npx electron-vite'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
