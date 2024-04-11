@@ -2,8 +2,8 @@
   "coc.preferences.formatOnSave": true,
   "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
   "pyright.enable": true,
-  "python.formatting.provider": "black",
-  "pyright.organizeimports.provider": "isort",
+  "python.formatting.provider": "ruff",
+  "pyright.organizeimports.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false
