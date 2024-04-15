@@ -3,7 +3,7 @@
   "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
   "pyright.enable": true,
   "python.formatting.provider": "ruff",
-  "pyright.organizeimports.provider": "isort",
+  "pyright.organizeimports.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false
