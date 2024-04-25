@@ -120,6 +120,7 @@ hi pythonDecorator ctermfg=246
 hi pythonDottedName ctermfg=246
 hi pythonExtraOperator ctermfg=246
 hi pythonStrFormat ctermfg=246 ctermbg=237
+hi pythonStrTemplate ctermfg=246 ctermbg=237
 hi pythonSelf ctermfg=253
 hi pythonRepeat ctermfg=106
 hi pythonFunction ctermfg=253

@@ -6,5 +6,6 @@
   "pyright.organizeimports.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
-  "pyright.inlayHints.functionReturnTypes": false
+  "pyright.inlayHints.functionReturnTypes": false,
+  "snippets.ultisnips.pythonPrompt": false
 }
