@@ -327,4 +327,4 @@ nvm use system --silent
 
 # Livemark
 source /home/roll/.bash_completions/livemark.sh
-eval "$(~/.rbenv/bin/rbenv init - bash)"
+# eval "$(~/.rbenv/bin/rbenv init - bash)"
