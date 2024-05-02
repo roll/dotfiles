@@ -12,6 +12,8 @@ tmp/
 .tmuxp.yml
 .venv
 .user
+.vscode
+.vim
 composer.phar
 *.iml
 run.yml
