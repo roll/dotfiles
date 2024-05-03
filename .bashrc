@@ -244,6 +244,7 @@ alias cdk='npx cdk'
 alias pm2='npx pm2'
 
 # Node (shorcuts)
+alias vitest='npx vitest'
 alias vinode='npx vite-node'
 alias vitron='npx electron-vite'
 

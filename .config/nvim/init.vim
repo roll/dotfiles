@@ -257,6 +257,7 @@ let g:coc_global_extensions = [
 \ 'coc-eslint',
 \ 'coc-pyright',
 \ 'coc-prettier',
+\ '@yaegassy/coc-astro',
 \ 'coc-snippets'
 \]
 " https://github.com/neoclide/coc.nvim/issues/531
