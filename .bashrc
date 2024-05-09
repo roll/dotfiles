@@ -223,6 +223,12 @@ alias b='cp ~/.tmuxp.yml . && sed -i "s/home/${PWD##*/}/" .tmuxp.yml'
 alias v='source .venv'
 alias e='set -a; source .env'
 
+# Node (shorcuts)
+alias jp='pnpm'
+alias jt='npx vitest'
+alias js='npx vite-node'
+alias jd='npx electron-vite'
+
 # Node
 alias electron-vite='npx electron-vite'
 alias vite-node='npx vite-node'
@@ -242,11 +248,6 @@ alias tsc='npx tsc'
 alias ncu='npx ncu'
 alias cdk='npx cdk'
 alias pm2='npx pm2'
-
-# Node (shorcuts)
-alias vitest='npx vitest'
-alias vinode='npx vite-node'
-alias vitron='npx electron-vite'
 
 # Packer
 alias packer='$HOME/.packer/vendor/packer'
