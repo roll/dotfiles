@@ -224,10 +224,10 @@ alias v='source .venv'
 alias e='set -a; source .env'
 
 # Node (shorcuts)
-alias jp='pnpm'
-alias jt='npx vitest'
 alias js='npx vite-node'
-alias jd='npx electron-vite'
+alias jsp='pnpm'
+alias jst='npx vitest'
+alias jsd='npx electron-vite'
 
 # Node
 alias electron-vite='npx electron-vite'
