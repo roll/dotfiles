@@ -212,6 +212,7 @@ hi typescriptMessage ctermfg=253
 hi xmlError ctermfg=253
 hi typescriptDecorators ctermbg=NONE
 hi typescriptGlobalNodeObjects ctermbg=NONE
+hi jsxBraces ctermfg=253
 
 " Prisma
 hi prismaModel ctermfg=111
