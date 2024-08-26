@@ -21,7 +21,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'github/copilot.vim'
 Plug 'stevearc/aerial.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'neovim/nvim-lspconfig'
@@ -41,6 +40,12 @@ Plug 'ianks/vim-tsx'
 Plug 'prisma/vim-prisma'
 Plug 'wuelnerdotexe/vim-astro'
 Plug 'sheerun/vim-polyglot'
+
+" AI
+" :Copilot setup
+" Plug 'github/copilot.vim'
+" :Codeium Auth
+Plug 'Exafunction/codeium.vim'
 
 call plug#end()
 
