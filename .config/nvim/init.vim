@@ -24,6 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'stevearc/aerial.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'hedyhli/outline.nvim'
 
 " Editor
 Plug 'terryma/vim-multiple-cursors'
@@ -142,7 +143,9 @@ nnoremap <Leader>E O<ESC>j
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
-nnoremap <Leader>m :Vista!!<CR>
+nnoremap <Leader>m :Outline<CR>
+nnoremap <Leader>i :call codeium#Chat()<CR>
+" nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
 nnoremap <Leader>f :TmuxNavigateRight<CR>:Files<CR>
@@ -174,7 +177,7 @@ noremap <Leader>9 :tabm -1<CR>
 noremap <Leader>0 :tabm +1<CR>
 noremap <Leader>- <C-w>s
 noremap <Leader>= <C-w>v
-map <silent> <Leader>i :exe "tabn ".g:lasttab<CR>
+" map <silent> <Leader>i :exe "tabn ".g:lasttab<CR>
 map <silent> <Leader>j :tabprevious<CR>
 map <silent> <Leader>k :tabnext<CR>
 au TabLeave * let g:lasttab=tabpagenr()
@@ -273,6 +276,9 @@ let g:UltiSnipsSnippetsDir = '~/.config/nvim/snipped'
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/snipped']
 let g:UltiSnipsExpandTrigger="<C-s>"
 
+" Codeium
+let g:codeium_enable_chat = 1
+
 " Gitgutter
 let gitgutter_eager=0
 
@@ -280,11 +286,11 @@ let gitgutter_eager=0
 let NERDSpaceDelims=1
 
 " Vista
-let g:vista_default_executive = 'coc'
-let g:vista_ignore_kinds = ['Variable']
-let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
-let g:vista#renderer#enable_icon = 1
-let g:vista#renderer#icons = {
+" let g:vista_default_executive = 'coc'
+" let g:vista_ignore_kinds = ['Variable']
+" let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+" let g:vista#renderer#enable_icon = 1
+" let g:vista#renderer#icons = {
 \ "function": "\uf794",
 \ "variable": "\uf71b",
 \}
@@ -334,5 +340,5 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" Enable init.lua
-" lua require('init')
+" Run lua configs
+lua require('outline-config')
