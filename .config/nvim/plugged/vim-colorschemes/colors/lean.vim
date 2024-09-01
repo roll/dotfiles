@@ -112,8 +112,8 @@ hi prismaModel ctermfg=111
 " hi prismaType ctermfg=111
 
 " TypeScript
-hi typescriptLabel ctermfg=111 cterm=bold
-hi typescriptFuncKeyword ctermfg=111 cterm=bold
+hi typescriptLabel ctermfg=106 cterm=bold
+hi typescriptFuncKeyword ctermfg=106 cterm=bold
 hi typescriptIdentifier ctermfg=106
 hi typescriptStorageClass ctermfg=106
 hi typescriptType ctermfg=106
