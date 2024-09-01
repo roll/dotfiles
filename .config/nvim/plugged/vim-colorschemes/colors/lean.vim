@@ -116,7 +116,7 @@ hi typescriptLabel ctermfg=106 cterm=bold
 hi typescriptFuncKeyword ctermfg=106 cterm=bold
 hi typescriptIdentifier ctermfg=106
 hi typescriptStorageClass ctermfg=106
-hi typescriptType ctermfg=106
+hi typescriptType ctermfg=111
 hi typescriptGlobalObjects ctermfg=253
 hi typescriptExceptions ctermfg=253
 hi typescriptBraces ctermfg=253
