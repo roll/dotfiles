@@ -1,5 +1,9 @@
 -- https://github.com/hedyhli/outline.nvim
 require('outline').setup({
+  outline_window = {
+    width = 15,
+    relative = false,
+  },
   preview_window = {
     live = true
   },

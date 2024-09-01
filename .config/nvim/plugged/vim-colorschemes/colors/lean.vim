@@ -85,13 +85,6 @@ hi DiffAdd guifg=NONE guibg=#13354A guisp=#13354A gui=NONE ctermfg=NONE ctermbg=
 hi TabLine guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi colorcolumn guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
-" SQL
-hi sqlKeyword ctermfg=106 ctermbg=237
-hi sqlSpecial ctermfg=106 ctermbg=237
-
-" HTML
-hi javaScript ctermfg=253 ctermbg=237
-
 " Vim
 hi vimVar ctermfg=253
 hi vimMapModKey ctermfg=111
@@ -110,21 +103,47 @@ hi yamlFlowIndicator ctermbg=237
 hi yamlConstant ctermfg=253
 hi yamlInteger ctermfg=253
 
-" TOML
-hi tomlKey ctermfg=106
-hi tomlKeyDq ctermfg=106
+" SQL
+hi sqlKeyword ctermfg=106 ctermbg=237
+hi sqlSpecial ctermfg=106 ctermbg=237
 
-" Python
-hi pythonBuiltinType ctermfg=253
-hi pythonDecorator ctermfg=246
-hi pythonDottedName ctermfg=246
-hi pythonExtraOperator ctermfg=246
-hi pythonStrFormat ctermfg=246 ctermbg=237
-hi pythonStrTemplate ctermfg=246 ctermbg=237
-hi pythonSelf ctermfg=253
-hi pythonRepeat ctermfg=106
-hi pythonFunction ctermfg=253
-hi pythonEscape ctermfg=246
+" Prisma
+hi prismaModel ctermfg=111
+" hi prismaType ctermfg=111
+
+" TypeScript
+hi typescriptLabel ctermfg=111 cterm=bold
+hi typescriptFuncKeyword ctermfg=111 cterm=bold
+hi typescriptIdentifier ctermfg=106
+hi typescriptStorageClass ctermfg=106
+hi typescriptType ctermfg=106
+hi typescriptGlobalObjects ctermfg=253
+hi typescriptExceptions ctermfg=253
+hi typescriptBraces ctermfg=253
+hi typescriptHtmlEvents ctermfg=253
+hi typescriptMessage ctermfg=253
+hi xmlError ctermfg=253
+hi typescriptDecorators ctermbg=NONE
+hi typescriptGlobalNodeObjects ctermbg=NONE
+hi jsxBraces ctermfg=253
+hi javaScriptIdentifier ctermfg=106
+hi xmlTag ctermfg=106
+hi xmlTagName ctermfg=106
+hi xmlEndTag ctermfg=106
+hi javaScript ctermfg=253 ctermbg=237
+hi javaScriptFunction ctermfg=106
+hi javaScriptFuncArg ctermfg=253
+hi javaScriptBrowserObjects ctermfg=253
+hi javaScriptEventListenerKeywords ctermfg=253
+hi javaScriptWebAPI ctermfg=253
+hi javaScriptHtmlElemProperties ctermfg=253
+hi javaScriptDOMObjects ctermfg=253
+hi javaScriptDOMMethods ctermfg=253
+hi javaScriptGlobalObjects ctermfg=253
+hi javaScriptExceptions ctermfg=253
+hi javaScriptAjaxMethods ctermfg=253
+hi javaScriptDocTags ctermfg=240
+hi javaScriptEmbed ctermfg=253
 
 " CSS
 hi cssBoxProp ctermfg=253
@@ -162,58 +181,20 @@ hi cssPseudoClass ctermfg=106
 hi cssVendor ctermfg=111
 hi cssImportant ctermfg=111 ctermbg=237
 
-" SASS
-hi sassVariable ctermfg=253
-hi sassId ctermfg=106
-hi sassIdChar ctermfg=106
-hi sassClassChar ctermfg=106
-hi sassMixin ctermfg=106
-hi sassMixinName ctermfg=106
+" Legacy
 
-" CoffeeScript
-hi CoffeeParen ctermfg=253
-hi CoffeeBracket ctermfg=253
-hi CoffeeSpecialOp ctermfg=253
-hi CoffeeSpecialIdent ctermfg=253
-hi CoffeeSpecialVar ctermfg=106 ctermbg=237
-hi CoffeeObjAssign ctermfg=106
-hi coffeeExtendedOp ctermfg=246
-hi coffeeSpecialOp ctermfg=246
-hi coffeeDotAccess ctermfg=246
+" Python
+hi pythonBuiltinType ctermfg=253
+hi pythonDecorator ctermfg=246
+hi pythonDottedName ctermfg=246
+hi pythonExtraOperator ctermfg=246
+hi pythonStrFormat ctermfg=246 ctermbg=237
+hi pythonStrTemplate ctermfg=246 ctermbg=237
+hi pythonSelf ctermfg=253
+hi pythonRepeat ctermfg=106
+hi pythonFunction ctermfg=253
+hi pythonEscape ctermfg=246
 
-" JavaScript
-hi javaScriptIdentifier ctermfg=106
-hi xmlTag ctermfg=106
-hi xmlTagName ctermfg=106
-hi xmlEndTag ctermfg=106
-hi javaScriptFunction ctermfg=106
-hi javaScriptFuncArg ctermfg=253
-hi javaScriptBrowserObjects ctermfg=253
-hi javaScriptEventListenerKeywords ctermfg=253
-hi javaScriptWebAPI ctermfg=253
-hi javaScriptHtmlElemProperties ctermfg=253
-hi javaScriptDOMObjects ctermfg=253
-hi javaScriptDOMMethods ctermfg=253
-hi javaScriptGlobalObjects ctermfg=253
-hi javaScriptExceptions ctermfg=253
-hi javaScriptAjaxMethods ctermfg=253
-hi javaScriptDocTags ctermfg=240
-hi javaScriptEmbed ctermfg=253
-
-" TypeScript
-hi typescriptIdentifier ctermfg=106
-hi typescriptStorageClass ctermfg=106
-hi typescriptType ctermfg=111
-hi typescriptGlobalObjects ctermfg=253
-hi typescriptExceptions ctermfg=253
-hi typescriptBraces ctermfg=253
-hi typescriptHtmlEvents ctermfg=253
-hi typescriptMessage ctermfg=253
-hi xmlError ctermfg=253
-hi typescriptDecorators ctermbg=NONE
-hi typescriptGlobalNodeObjects ctermbg=NONE
-hi jsxBraces ctermfg=253
-
-" Prisma
-hi prismaModel ctermfg=111
-" hi prismaType ctermfg=111
+" TOML
+hi tomlKey ctermfg=106
+hi tomlKeyDq ctermfg=106

@@ -57,7 +57,7 @@ let mapleader="\<Space>"
 set nowrap
 set nolist
 set linebreak
-set colorcolumn=100
+set colorcolumn=80
 
 " Search
 set hlsearch
@@ -70,7 +70,7 @@ set foldenable
 set foldmethod=indent
 set foldlevelstart=1
 set foldnestmax=10
-set foldcolumn=3
+set foldcolumn=0
 
 " Interface
 set ruler
@@ -211,7 +211,7 @@ autocmd bufenter * if
 autocmd BufWinEnter *.* NERDTreeFind | TmuxNavigateRight
 let g:NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
-let g:NERDTreeWinSize=30
+let g:NERDTreeWinSize=25
 " \ 'venv[[dir]]',
 let g:NERDTreeIgnore=[
 \ '^xunit.xml$',
