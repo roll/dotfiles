@@ -68,7 +68,7 @@ set ignorecase
 " Folding
 set foldenable
 set foldmethod=indent
-set foldlevelstart=1
+set foldlevelstart=3
 set foldnestmax=10
 set foldcolumn=0
 
