@@ -9,9 +9,9 @@ require('outline').setup({
   },
   keymaps = {
     -- These fold actions are collapsing tree nodes, not code folding
-    fold_open = 'l',
-    fold_closed = 'l',
-    -- fold_toggle = 'l'
+    fold_open = 'h',
+    fold_closed = 'H',
+    fold_toggle = 'l'
   },
   symbols = {
     filter = { 'String', exclude=true }

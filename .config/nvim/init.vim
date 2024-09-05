@@ -44,9 +44,9 @@ Plug 'sheerun/vim-polyglot'
 
 " AI
 " :Copilot setup
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
 " :Codeium Auth
-Plug 'Exafunction/codeium.vim'
+" Plug 'Exafunction/codeium.vim'
 
 call plug#end()
 
@@ -144,7 +144,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
 nnoremap <Leader>m :Outline<CR>
-nnoremap <Leader>i :call codeium#Chat()<CR>
+" nnoremap <Leader>i :call codeium#Chat()<CR>
+nnoremap <Leader>i :noh<CR>
 " nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
