@@ -46,7 +46,15 @@ Plug 'sheerun/vim-polyglot'
 " :Copilot setup
 Plug 'github/copilot.vim'
 " :Codeium Auth
-" Plug 'Exafunction/codeium.vim'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'nvim-lua/plenary.nvim'
+" Plug 'Exafunction/codeium.nvim'
 
 call plug#end()
 
@@ -342,4 +350,6 @@ function! <SID>SynStack()
 endfunc
 
 " Run lua configs
+lua require('cmp-config')
+" lua require('codeium-config')
 lua require('outline-config')

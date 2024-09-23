@@ -201,6 +201,7 @@ alias push='git push --follow-tags origin'
 alias fetch='git fetch -p'
 alias main='git checkout main || git checkout master'
 alias mpf='main && pull && fetch'
+alias gg='git grep'
 
 # Idea
 alias idea='$HOME/.idea/vendor/bin/idea.sh'
