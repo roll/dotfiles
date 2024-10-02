@@ -308,7 +308,7 @@ let NERDSpaceDelims=1
 let g:user_emmet_leader_key = '<C-e>'
 
 " Tabber
-let g:tabber_filename_style = 'filename'
+let g:tabber_filename_style = 'pathshorten'
 
 " Airline
 let g:airline_theme='papercolor'
