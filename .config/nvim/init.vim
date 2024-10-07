@@ -274,7 +274,6 @@ let g:coc_global_extensions = [
 \ 'coc-eslint',
 \ 'coc-pyright',
 \ 'coc-prettier',
-\ '@yaegassy/coc-astro',
 \ 'coc-snippets'
 \]
 " https://github.com/neoclide/coc.nvim/issues/531
@@ -308,7 +307,7 @@ let NERDSpaceDelims=1
 let g:user_emmet_leader_key = '<C-e>'
 
 " Tabber
-let g:tabber_filename_style = 'pathshorten'
+let g:tabber_filename_style = 'filename'
 
 " Airline
 let g:airline_theme='papercolor'
