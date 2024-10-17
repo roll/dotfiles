@@ -190,6 +190,7 @@ alias o='nvim'
 alias p='ipython'
 alias pf='pnpm -F'
 alias pn='pnpm'
+alias px='pnpm dlx'
 alias t='tmuxup'
 alias v='source .venv'
 
