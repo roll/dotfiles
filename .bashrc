@@ -226,9 +226,7 @@ alias e='set -a; source .env'
 
 # Node (shorcuts)
 alias pn='pnpm'
-alias pr='pnpm exec vite-node'
-alias px='pnpm dlx'
-alias pf='pnpm -F'
+alias js='pnpm exec vite-node'
 
 # Node
 alias electron-vite='npx electron-vite'
