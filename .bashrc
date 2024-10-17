@@ -176,15 +176,25 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# Chrome
-alias chrome='google-chrome %U'
+# Core
+alias f='fzf'
+alias o='nvim'
+alias h='cd $HOME'
+alias c='clear'
+alias p='ipython'
+alias n='node'
+alias t='tmuxup'
+alias b='cp ~/.tmuxp.yml . && sed -i "s/home/${PWD##*/}/" .tmuxp.yml'
+alias v='source .venv'
+alias e='set -a; source .env'
 
-# Composer
-alias composer='php composer'
+# PNPM
+alias pn='pnpm'
+alias pf='pnpm -F'
 
-# Docker
-alias compose='docker-compose'
-alias cloud='docker-cloud'
+# Vite
+alias vn='pnpm exec vite-node'
+alias vt='pnpm exec vitest'
 
 # Git
 alias git='hub'
@@ -203,6 +213,16 @@ alias main='git checkout main || git checkout master'
 alias mpf='main && pull && fetch'
 alias gg='git grep'
 
+# Docker
+alias compose='docker-compose'
+alias cloud='docker-cloud'
+
+# Chrome
+alias chrome='google-chrome %U'
+
+# Composer
+alias composer='php composer'
+
 # Idea
 alias idea='$HOME/.idea/vendor/bin/idea.sh'
 
@@ -211,51 +231,6 @@ alias ipython='ipython --no-confirm-exit'
 
 # Ltunify
 alias ltunify='$HOME/.ltunify/vendor/ltunify'
-
-# Misc
-alias f='fzf'
-alias o='nvim'
-alias h='cd $HOME'
-alias c='clear'
-alias p='ipython'
-alias n='node'
-alias t='tmuxup'
-alias b='cp ~/.tmuxp.yml . && sed -i "s/home/${PWD##*/}/" .tmuxp.yml'
-alias v='source .venv'
-alias e='set -a; source .env'
-
-# Node (shorcuts)
-alias pn='pnpm'
-alias js='pnpm exec vite-node'
-
-# Node
-alias electron-vite='npx electron-vite'
-alias vite-node='npx vite-node'
-alias esbuild='npx esbuild'
-alias wrangler='npx wrangler'
-alias prettier='npx prettier'
-alias clinic='npx clinic'
-alias eslint='npx eslint'
-alias prisma='npx prisma'
-alias npkill='npx npkill'
-alias biome='npx biome'
-alias astro='npx astro'
-alias jest='npx jest'
-alias func='npx func'
-alias ndb='npx ndb'
-alias tsc='npx tsc'
-alias ncu='npx ncu'
-alias cdk='npx cdk'
-alias pm2='npx pm2'
-
-# Packer
-alias packer='$HOME/.packer/vendor/packer'
-
-# Sphinx
-alias sphinx='sphinx-build -b html -d docs/_build/doctrees docs docs/_build/html'
-
-# Terraform
-alias terraform='$HOME/.terraform/vendor/terraform'
 
 # Tmux
 alias tmux='tmux -2'
