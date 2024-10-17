@@ -192,9 +192,9 @@ alias e='set -a; source .env'
 alias pn='pnpm'
 alias pf='pnpm -F'
 
-# Vite
-alias vn='pnpm exec vite-node'
-alias vt='pnpm exec vitest'
+# JavaScript
+alias js='pnpm exec vite-node'
+alias jt='pnpm exec vitest'
 
 # Git
 alias git='hub'
