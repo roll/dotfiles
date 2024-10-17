@@ -277,6 +277,36 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm use system --silent
 
-# Livemark
-source /home/roll/.bash_completions/livemark.sh
-# eval "$(~/.rbenv/bin/rbenv init - bash)"
+# PNPM
+###-begin-pnpm-completion-###
+if type complete &>/dev/null; then
+  _pnpm_completion () {
+    local words cword
+    if type _get_comp_words_by_ref &>/dev/null; then
+      _get_comp_words_by_ref -n = -n @ -n : -w words -i cword
+    else
+      cword="$COMP_CWORD"
+      words=("${COMP_WORDS[@]}")
+    fi
+
+    local si="$IFS"
+    IFS=$'\n' COMPREPLY=($(COMP_CWORD="$cword" \
+                           COMP_LINE="$COMP_LINE" \
+                           COMP_POINT="$COMP_POINT" \
+                           SHELL=bash \
+                           pnpm completion-server -- "${words[@]}" \
+                           2>/dev/null)) || return $?
+    IFS="$si"
+
+    if [ "$COMPREPLY" = "__tabtab_complete_files__" ]; then
+      COMPREPLY=($(compgen -f -- "$cword"))
+    fi
+
+    if type __ltrim_colon_completions &>/dev/null; then
+      __ltrim_colon_completions "${words[cword]}"
+    fi
+  }
+  complete -o default -F _pnpm_completion pnpm
+  complete -o default -F _pnpm_completion pn
+fi
+###-end-pnpm-completion-###
