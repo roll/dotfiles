@@ -176,71 +176,46 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-# Core
-alias f='fzf'
-alias o='nvim'
-alias h='cd $HOME'
-alias c='clear'
-alias p='ipython'
-alias n='node'
-alias t='tmuxup'
+# Shortcuts
 alias b='cp ~/.tmuxp.yml . && sed -i "s/home/${PWD##*/}/" .tmuxp.yml'
-alias v='source .venv'
+alias c='clear'
 alias e='set -a; source .env'
-
-# PNPM
-alias pn='pnpm'
-alias pf='pnpm -F'
-
-# JavaScript
+alias f='fzf'
+alias h='cd $HOME'
 alias js='pnpm exec vite-node'
-alias jt='pnpm exec vitest'
+alias mpf='main && pull && fetch'
+alias n='node'
+alias o='nvim'
+alias p='ipython'
+alias pf='pnpm -F'
+alias pn='pnpm'
+alias t='tmuxup'
+alias v='source .venv'
 
-# Git
-alias git='hub'
-alias status='git status'
-alias dif='git diff'
-alias log='git log --pretty=format:"%C(yellow)%h%Creset %s%Cgreen%d" --reverse -20'
-alias rollback='git checkout .'
-alias unstage='git reset'
-alias clean='git clean -f -d'
-alias commit='git add . && git commit -a'
+# Commands
 alias amend='git add . && git commit --amend'
+alias chrome='google-chrome %U'
+alias clean='git clean -f -d'
+alias cloud='docker-cloud'
+alias commit='git add . && git commit -a'
+alias compose='docker-compose'
+alias dif='git diff'
+alias fetch='git fetch -p'
+alias git='hub'
+alias idea='$HOME/.idea/vendor/bin/idea.sh'
+alias ipython='ipython --no-confirm-exit'
+alias log='git log --pretty=format:"%C(yellow)%h%Creset %s%Cgreen%d" --reverse -20'
+alias ltunify='$HOME/.ltunify/vendor/ltunify'
+alias main='git checkout main || git checkout master'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias pull='git pull origin'
 alias push='git push --follow-tags origin'
-alias fetch='git fetch -p'
-alias main='git checkout main || git checkout master'
-alias mpf='main && pull && fetch'
-alias gg='git grep'
-
-# Docker
-alias compose='docker-compose'
-alias cloud='docker-cloud'
-
-# Chrome
-alias chrome='google-chrome %U'
-
-# Composer
-alias composer='php composer'
-
-# Idea
-alias idea='$HOME/.idea/vendor/bin/idea.sh'
-
-# Ipython
-alias ipython='ipython --no-confirm-exit'
-
-# Ltunify
-alias ltunify='$HOME/.ltunify/vendor/ltunify'
-
-# Tmux
+alias rollback='git checkout .'
+alias status='git status'
 alias tmux='tmux -2'
 alias tmuxup='tmuxp load -y2 . || tmux attach'
-
-# Xclip
+alias unstage='git reset'
 alias xclip='xclip -selection c'
-
-# Network
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 #
 # Misc
