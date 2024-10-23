@@ -1,12 +1,13 @@
 {
   "coc.preferences.formatOnSave": true,
+  "prettier.formatterPriority": -1,
   "snippets.ultisnips.directories": ["~/.config/nvim/snipped"],
+  "css.validate": false,
   "pyright.enable": true,
   "python.formatting.provider": "ruff",
   "pyright.organizeimports.provider": "ruff",
   "python.linting.ruffEnabled": true,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
-  "snippets.ultisnips.pythonPrompt": false,
-  "css.validate": false
+  "snippets.ultisnips.pythonPrompt": false
 }

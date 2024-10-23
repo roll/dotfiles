@@ -130,10 +130,20 @@ autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type :')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type=')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type =')
 autocmd FileType typescript :call matchadd('typescriptGlobalObjects', 'type)')
+
+" Autocommands
 aug python
   au!
   au BufWrite *.py call CocAction('runCommand', 'python.sortImports')
   au BufWrite *.py call CocAction('format')
+aug END
+aug typescript
+  au!
+  au BufWrite *.ts call CocAction('runCommand', 'editor.action.organizeImport')
+aug END
+aug typescript.tsx
+  au!
+  au BufWrite *.tsx call CocAction('runCommand', 'editor.action.organizeImport')
 aug END
 
 " Actions
@@ -266,6 +276,7 @@ function! s:show_documentation()
 endfunction
 let g:coc_global_extensions = [
 \ 'coc-tsserver',
+\ 'coc-biome',
 \ 'coc-emmet',
 \ 'coc-css',
 \ 'coc-html',
