@@ -2,60 +2,36 @@
 " General
 "
 
-" Install
+" Plugins
 call plug#begin('~/.config/nvim/plugged')
-
-" IDE
-Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
-Plug 'mattn/emmet-vim'
-Plug 'fweep/vim-tabber'
-Plug 'preservim/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'liuchengxu/vista.vim'
-Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
-Plug 'flazz/vim-colorschemes'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'flazz/vim-colorschemes'
+Plug 'fweep/vim-tabber'
+Plug 'github/copilot.vim'
+Plug 'hedyhli/outline.nvim'
+Plug 'ianks/vim-tsx'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'stevearc/aerial.nvim'
-Plug 'simrat39/symbols-outline.nvim'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hedyhli/outline.nvim'
-
-" Editor
-Plug 'terryma/vim-multiple-cursors'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'nelstrom/vim-visual-star-search'
-Plug 'terryma/vim-expand-region'
-Plug 'scrooloose/nerdcommenter'
-Plug 'Raimondi/delimitMate'
-
-" Languages
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'kshenoy/vim-signature'
 Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-Plug 'prisma/vim-prisma'
-Plug 'wuelnerdotexe/vim-astro'
-Plug 'sheerun/vim-polyglot'
-
-" AI
-" :Copilot setup
-Plug 'github/copilot.vim'
-" :Codeium Auth
-Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'mattn/emmet-vim'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'nvim-lua/plenary.nvim'
-" Plug 'Exafunction/codeium.nvim'
-
+Plug 'preservim/nerdtree'
+Plug 'prisma/vim-prisma'
+Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
+Plug 'simrat39/symbols-outline.nvim'
+Plug 'stevearc/aerial.nvim'
+Plug 'terryma/vim-expand-region'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Leader
@@ -159,9 +135,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>D :call <SID>SynStack()<CR>
 nnoremap <Leader>m :Outline<CR>
-" nnoremap <Leader>i :call codeium#Chat()<CR>
 nnoremap <Leader>i :noh<CR>
-" nnoremap <Leader>m :Vista!!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>u :NERDTreeFind<CR>
 nnoremap <Leader>f :TmuxNavigateRight<CR>:Files<CR>
@@ -212,13 +186,14 @@ nnoremap <silent> <C-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <C-l> :TmuxNavigateRight<CR>
 let g:tmux_navigator_no_mappings=1
 
+" Snippets
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
+xmap <leader>x  <Plug>(coc-convert-snippet)
+
 " Spelling
 map <Leader>l :set spelllang=en<CR> :set spell<CR>
 map <Leader>L :set spelllang=en<CR> :set nospell<CR>
-
-"
-" Plugins
-"
 
 " Nerdtree
 autocmd bufenter * if
@@ -249,72 +224,6 @@ let g:NERDTreeIgnore=[
 \ '.nyc_output[[dir]]',
 \ ]
 
-" Cocnvim
-nmap <silent> gp <Plug>(coc-diagnostic-prev)
-nmap <silent> gn <Plug>(coc-diagnostic-next)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
-" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
-" \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-nnoremap <silent> <Leader>d :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-let g:coc_global_extensions = [
-\ 'coc-tsserver',
-\ 'coc-biome',
-\ 'coc-emmet',
-\ 'coc-css',
-\ 'coc-html',
-\ 'coc-json',
-\ 'coc-yank',
-\ 'coc-eslint',
-\ 'coc-pyright',
-\ 'coc-prettier',
-\ 'coc-snippets'
-\]
-" https://github.com/neoclide/coc.nvim/issues/531
-nmap <Esc> :call coc#float#close_all() <CR>
-
-" Ultisnip
-let g:UltiSnipsSnippetsDir = '~/.config/nvim/snipped'
-let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/snipped']
-let g:UltiSnipsExpandTrigger="<C-s>"
-
-" Codeium
-let g:codeium_enable_chat = 1
-
-" Gitgutter
-let gitgutter_eager=0
-
-" Nerdcommenter
-let NERDSpaceDelims=1
-
-" Vista
-" let g:vista_default_executive = 'coc'
-" let g:vista_ignore_kinds = ['Variable']
-" let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
-" let g:vista#renderer#enable_icon = 1
-" let g:vista#renderer#icons = {
-\ "function": "\uf794",
-\ "variable": "\uf71b",
-\}
-
-" Emmet
-let g:user_emmet_leader_key = '<C-e>'
-
-" Tabber
-let g:tabber_filename_style = 'filename'
-
 " Airline
 let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 1
@@ -339,6 +248,18 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+" Gitgutter
+let gitgutter_eager=0
+
+" Nerdcommenter
+let NERDSpaceDelims=1
+
+" Emmet
+let g:user_emmet_leader_key = '<C-e>'
+
+" Tabber
+let g:tabber_filename_style = 'filename'
+
 " Markdown
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
@@ -355,6 +276,4 @@ function! <SID>SynStack()
 endfunc
 
 " Run lua configs
-lua require('cmp-config')
-" lua require('codeium-config')
-lua require('outline-config')
+lua require('init')
