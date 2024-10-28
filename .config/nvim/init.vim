@@ -5,7 +5,6 @@
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
 Plug 'fweep/vim-tabber'
@@ -19,14 +18,10 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovim/nvim-lspconfig'
 Plug 'preservim/nerdtree'
 Plug 'prisma/vim-prisma'
-Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
-Plug 'simrat39/symbols-outline.nvim'
-Plug 'stevearc/aerial.nvim'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
@@ -125,6 +120,7 @@ map j gj
 map k gk
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+nnoremap <Leader>v :so %<CR>
 nnoremap <Leader>r :e!<CR>
 nnoremap <Leader>a ggVG
 nnoremap <Leader>s `[v`]

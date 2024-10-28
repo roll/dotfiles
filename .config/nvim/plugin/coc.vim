@@ -26,6 +26,7 @@ let g:coc_global_extensions = [
 \ 'coc-json',
 \ 'coc-yank',
 \ 'coc-eslint',
+\ 'coc-react-refactor',
 \ 'coc-pyright',
 \ 'coc-prettier',
 \ 'coc-snippets'
