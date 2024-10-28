@@ -32,3 +32,8 @@ let g:coc_global_extensions = [
 \]
 " https://github.com/neoclide/coc.nvim/issues/531
 nmap <Esc> :call coc#float#close_all() <CR>
+
+" Snippets
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
+xmap <leader>x  <Plug>(coc-convert-snippet)

@@ -2,18 +2,4 @@
 # General
 #
 
-tmp/
-.tmp/
-.python/
-.python2/
-.python3/
-.ropeproject/
 .tmuxp.yml
-.venv
-.user
-.vscode
-.vim
-composer.phar
-*.iml
-run.yml
-goodread.yml

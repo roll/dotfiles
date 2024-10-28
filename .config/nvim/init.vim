@@ -186,83 +186,9 @@ nnoremap <silent> <C-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <C-l> :TmuxNavigateRight<CR>
 let g:tmux_navigator_no_mappings=1
 
-" Snippets
-imap <C-l> <Plug>(coc-snippets-expand)
-vmap <C-j> <Plug>(coc-snippets-select)
-xmap <leader>x  <Plug>(coc-convert-snippet)
-
 " Spelling
 map <Leader>l :set spelllang=en<CR> :set spell<CR>
 map <Leader>L :set spelllang=en<CR> :set nospell<CR>
-
-" Nerdtree
-autocmd bufenter * if
-\ (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary")
-\ | q | endif
-autocmd BufWinEnter *.* NERDTreeFind | TmuxNavigateRight
-let g:NERDTreeShowHidden=1
-let g:NERDTreeWinPos="left"
-let g:NERDTreeWinSize=25
-" \ 'venv[[dir]]',
-let g:NERDTreeIgnore=[
-\ '^xunit.xml$',
-\ '^.coverage$',
-\ '^selenium-debug.log$',
-\ '^npm-debug.log$',
-\ 'pyc$',
-\ '._cache[[dir]]',
-\ '.git$[[dir]]',
-\ '.coverage[[dir]]',
-\ '.egg-info[[dir]]',
-\ '.tox[[dir]]',
-\ '.ropeproject[[dir]]',
-\ '.publish[[dir]]',
-\ '_site[[dir]]',
-\ '.sass-cache[[dir]]',
-\ '.vagrant[[dir]]',
-\ '__pycache__[[dir]]',
-\ '.nyc_output[[dir]]',
-\ ]
-
-" Airline
-let g:airline_theme='papercolor'
-let g:airline_powerline_fonts = 1
-let g:airline_symbols = {}
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-" Gitgutter
-let gitgutter_eager=0
-
-" Nerdcommenter
-let NERDSpaceDelims=1
-
-" Emmet
-let g:user_emmet_leader_key = '<C-e>'
-
-" Tabber
-let g:tabber_filename_style = 'filename'
-
-" Markdown
-let vim_markdown_preview_github=1
-let vim_markdown_preview_hotkey='<C-m>'
 
 " Whitespaces
 autocmd BufWritePre * :FixWhitespace
