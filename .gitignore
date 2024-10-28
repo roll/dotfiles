@@ -8,7 +8,6 @@ tmp/
 .python2/
 .python3/
 .ropeproject/
-.editorconfig
 .tmuxp.yml
 .venv
 .user
