@@ -110,9 +110,6 @@ set smartindent
 set ts=4 sts=4 sw=4 et
 filetype indent on
 
-" Formatters
-let g:neoformat_enabled_typescript = ['rome']
-
 " Filetypes
 filetype on
 autocmd FileType sql setl ts=2 sts=2 sw=2
@@ -237,7 +234,6 @@ let g:NERDTreeIgnore=[
 \ '^.coverage$',
 \ '^selenium-debug.log$',
 \ '^npm-debug.log$',
-\ '^rome-socket',
 \ 'pyc$',
 \ '._cache[[dir]]',
 \ '.git$[[dir]]',
@@ -251,7 +247,6 @@ let g:NERDTreeIgnore=[
 \ '.vagrant[[dir]]',
 \ '__pycache__[[dir]]',
 \ '.nyc_output[[dir]]',
-\ 'rome-logs[[dir]]',
 \ ]
 
 " Cocnvim
