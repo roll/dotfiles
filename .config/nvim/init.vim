@@ -186,9 +186,6 @@ let g:tmux_navigator_no_mappings=1
 map <Leader>l :set spelllang=en<CR> :set spell<CR>
 map <Leader>L :set spelllang=en<CR> :set nospell<CR>
 
-" Whitespaces
-autocmd BufWritePre * :FixWhitespace
-
 " Highlights
 function! <SID>SynStack()
   if !exists("*synstack")
